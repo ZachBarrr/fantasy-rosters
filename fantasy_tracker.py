@@ -33,6 +33,7 @@ YAHOO_LEAGUES = [
 # read straight from the Yahoo website with no login or API approval needed.
 YAHOO_PUBLIC_LEAGUES = [
     {"name": "Barringtons and Russes", "league_id": 202014},
+    {"name": "Yahoo League B", "league_id": 1585076},  # only works if its commissioner makes it public
 ]
 
 OUTPUT_FILE = "rosters.json"
@@ -196,11 +197,17 @@ PLAYER_RE = re.compile(
 )
 
 
+class YahooPublicError(Exception):
+    """Raised when a public-league page can't be read (private league, Yahoo blocked us, layout changed)."""
+
+
 def fetch_html(url):
     import requests
     resp = requests.get(url, headers=BROWSER_HEADERS, timeout=30)
     if resp.status_code != 200:
-        fail(f"Yahoo returned HTTP {resp.status_code} for {url}. If the league is no longer public, this stops working.")
+        raise YahooPublicError(f"Yahoo returned HTTP {resp.status_code} for {url}")
+    if "login.yahoo.com" in resp.url:
+        raise YahooPublicError(f"Yahoo redirected {url} to a login page (league is private)")
     return resp.text
 
 
@@ -208,32 +215,43 @@ def get_yahoo_public_rosters():
     """Scrape rosters from Yahoo leagues that are publicly viewable. No credentials needed."""
     leagues = []
     for cfg in YAHOO_PUBLIC_LEAGUES:
-        base = f"https://football.fantasysports.yahoo.com/f1/{cfg['league_id']}"
-        html = fetch_html(base)
-
-        # Build {team_number: team_name}, keeping the first name seen for each number.
-        team_names = {}
-        for league_id, team_num, name in TEAM_LINK_RE.findall(html):
-            if int(league_id) == cfg["league_id"] and team_num not in team_names:
-                team_names[team_num] = name.strip()
-        if not team_names:
-            fail(f"Found no teams on {base}. Is the league set to 'viewable by the public'?")
-
-        teams = []
-        for team_num in sorted(team_names, key=int):
-            page = fetch_html(f"{base}/{team_num}")
-            players = []
-            seen = set()
-            for name, nfl_team, position in PLAYER_RE.findall(page):
-                if name in seen:          # the page repeats a few players in side widgets
-                    continue
-                seen.add(name)
-                players.append({"name": name, "position": position, "nfl_team": nfl_team.upper()})
-            teams.append({"team_name": team_names[team_num], "players": players})
-
-        leagues.append({"league_name": cfg["name"], "source": "yahoo-public", "teams": teams})
-        print(f"Yahoo (public): {cfg['name']} — {len(teams)} teams")
+        try:
+            leagues.append(scrape_public_league(cfg))
+            print(f"Yahoo (public): {cfg['name']} — {len(leagues[-1]['teams'])} teams")
+        except YahooPublicError as e:
+            # Don't kill the whole run over one league: the others still get saved.
+            print(f"Yahoo (public): {cfg['name']} — SKIPPED: {e}")
     return leagues
+
+
+def scrape_public_league(cfg):
+    """Read one public league. Raises YahooPublicError if it can't."""
+    base = f"https://football.fantasysports.yahoo.com/f1/{cfg['league_id']}"
+    html = fetch_html(base)
+
+    # Build {team_number: team_name}, keeping the first name seen for each number.
+    team_names = {}
+    for league_id, team_num, name in TEAM_LINK_RE.findall(html):
+        if int(league_id) == cfg["league_id"] and team_num not in team_names:
+            team_names[team_num] = name.strip()
+    if not team_names:
+        raise YahooPublicError(f"found no teams on {base} — league is probably not set to 'viewable by the public'")
+
+    teams = []
+    for team_num in sorted(team_names, key=int):
+        page = fetch_html(f"{base}/{team_num}")
+        players = []
+        seen = set()
+        for name, nfl_team, position in PLAYER_RE.findall(page):
+            if name in seen:          # the page repeats a few players in side widgets
+                continue
+            seen.add(name)
+            players.append({"name": name, "position": position, "nfl_team": nfl_team.upper()})
+        if not players:
+            raise YahooPublicError(f"found no players on {base}/{team_num} — page layout may have changed")
+        teams.append({"team_name": team_names[team_num], "players": players})
+
+    return {"league_name": cfg["name"], "source": "yahoo-public", "teams": teams}
 
 
 def yahoo_is_configured():
