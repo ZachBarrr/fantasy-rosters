@@ -26,14 +26,14 @@ ESPN_YEAR = 2026
 
 # Yahoo league ID: the number in the URL, e.g. .../f1/123456  -> 123456
 YAHOO_LEAGUES = [
-    {"name": "Yahoo League B", "league_id": 1585076},  # rename to whatever you call it
+    {"name": "Dan B's Death League", "league_id": 1585076},  # rename to whatever you call it
 ]
 
 # Yahoo leagues set to "viewable by the public" (commissioner setting). These are
 # read straight from the Yahoo website with no login or API approval needed.
 YAHOO_PUBLIC_LEAGUES = [
     {"name": "Barringtons and Russes", "league_id": 202014},
-    {"name": "Yahoo League B", "league_id": 1585076},  # only works if its commissioner makes it public
+    {"name": "Dan B's Death League", "league_id": 1585076},  # private: needs YAHOO_Y / YAHOO_T cookies
 ]
 
 OUTPUT_FILE = "rosters.json"
@@ -183,9 +183,10 @@ BROWSER_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 
-# Team links on the league home page look like:
-#   <a class="F-link" href="https://football.fantasysports.yahoo.com/f1/202014/4">Go Sports</a>
-TEAM_LINK_RE = re.compile(r'<a[^>]*class="F-link"[^>]*href="[^"]*/f1/(\d+)/(\d+)"[^>]*>([^<]+)</a>')
+# Team links on the league's /teams page look like:
+#   <a href="https://football.fantasysports.yahoo.com/f1/202014/4">Go Sports</a>
+# (the league home page only shows a few teams in some league types, so we use /teams)
+TEAM_LINK_RE = re.compile(r'<a[^>]*href="[^"]*/f1/(\d+)/(\d+)"[^>]*>([^<]{1,80})</a>')
 
 # Each roster row has the player name in a link, then "Was - QB" in a small span:
 #   <a class="Nowrap name F-link playernote" ... title="Jayden Daniels">Jayden Daniels</a>
@@ -201,13 +202,27 @@ class YahooPublicError(Exception):
     """Raised when a public-league page can't be read (private league, Yahoo blocked us, layout changed)."""
 
 
+def yahoo_cookies():
+    """
+    Optional: your own Yahoo login cookies, so private leagues can be read the same
+    way the browser does. Copy the values of the "Y" and "T" cookies from Chrome
+    (DevTools -> Application -> Cookies -> https://football.fantasysports.yahoo.com)
+    into YAHOO_Y / YAHOO_T. Leave blank to only read public leagues.
+    """
+    y = os.environ.get("YAHOO_Y", "").strip()
+    t = os.environ.get("YAHOO_T", "").strip()
+    if y and t and y != "paste_here":
+        return {"Y": y, "T": t}
+    return {}
+
+
 def fetch_html(url):
     import requests
-    resp = requests.get(url, headers=BROWSER_HEADERS, timeout=30)
+    resp = requests.get(url, headers=BROWSER_HEADERS, cookies=yahoo_cookies(), timeout=30)
     if resp.status_code != 200:
         raise YahooPublicError(f"Yahoo returned HTTP {resp.status_code} for {url}")
     if "login.yahoo.com" in resp.url:
-        raise YahooPublicError(f"Yahoo redirected {url} to a login page (league is private)")
+        raise YahooPublicError(f"Yahoo redirected {url} to a login page (league is private; set YAHOO_Y / YAHOO_T cookies or ask the commissioner to make it public)")
     return resp.text
 
 
@@ -227,13 +242,15 @@ def get_yahoo_public_rosters():
 def scrape_public_league(cfg):
     """Read one public league. Raises YahooPublicError if it can't."""
     base = f"https://football.fantasysports.yahoo.com/f1/{cfg['league_id']}"
-    html = fetch_html(base)
+    html = fetch_html(f"{base}/teams")
 
     # Build {team_number: team_name}, keeping the first name seen for each number.
+    # Skip generic link labels like "My Team" that also point at a team page.
     team_names = {}
     for league_id, team_num, name in TEAM_LINK_RE.findall(html):
-        if int(league_id) == cfg["league_id"] and team_num not in team_names:
-            team_names[team_num] = name.strip()
+        name = name.strip()
+        if int(league_id) == cfg["league_id"] and team_num not in team_names and name and name != "My Team":
+            team_names[team_num] = name
     if not team_names:
         raise YahooPublicError(f"found no teams on {base} — league is probably not set to 'viewable by the public'")
 
