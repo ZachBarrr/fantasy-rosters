@@ -1,0 +1,5 @@
+# Never commit credentials
+.env
+oauth2.json
+__pycache__/
+*.bak
