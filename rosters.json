@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T04:30:55Z",
+  "updated_at": "2026-09-10T16:32:49Z",
   "leagues": [
     {
       "league_name": "McCarthy Precon",
@@ -859,9 +859,9 @@
               "nfl_team": "JAX"
             },
             {
-              "name": "Eddy Pineiro",
-              "position": "K",
-              "nfl_team": "SF"
+              "name": "Michael Mayer",
+              "position": "TE",
+              "nfl_team": "LV"
             }
           ]
         }
@@ -875,9 +875,9 @@
           "team_name": "Zach",
           "players": [
             {
-              "name": "Jayden Daniels",
+              "name": "Kyler Murray",
               "position": "QB",
-              "nfl_team": "WAS"
+              "nfl_team": "MIN"
             },
             {
               "name": "Saquon Barkley",
@@ -905,14 +905,19 @@
               "nfl_team": "CLE"
             },
             {
-              "name": "Quinshon Judkins",
-              "position": "RB",
-              "nfl_team": "CLE"
-            },
-            {
               "name": "Jameson Williams",
               "position": "WR",
               "nfl_team": "DET"
+            },
+            {
+              "name": "Jayden Daniels",
+              "position": "QB",
+              "nfl_team": "WAS"
+            },
+            {
+              "name": "Quinshon Judkins",
+              "position": "RB",
+              "nfl_team": "CLE"
             },
             {
               "name": "Chuba Hubbard",
@@ -928,11 +933,6 @@
               "name": "Kenny Gainwell",
               "position": "RB",
               "nfl_team": "TB"
-            },
-            {
-              "name": "Kyler Murray",
-              "position": "QB",
-              "nfl_team": "MIN"
             },
             {
               "name": "Xavier Worthy",
@@ -1786,14 +1786,14 @@
               "nfl_team": "GB"
             },
             {
-              "name": "Jameson Williams",
-              "position": "WR",
-              "nfl_team": "DET"
-            },
-            {
               "name": "Garrett Wilson",
               "position": "WR",
               "nfl_team": "NYJ"
+            },
+            {
+              "name": "Jameson Williams",
+              "position": "WR",
+              "nfl_team": "DET"
             },
             {
               "name": "Jayden Reed",
@@ -2266,14 +2266,14 @@
               "nfl_team": "TB"
             },
             {
-              "name": "Jalen Coker",
-              "position": "WR",
-              "nfl_team": "CAR"
-            },
-            {
               "name": "Jordyn Tyson",
               "position": "WR",
               "nfl_team": "NO"
+            },
+            {
+              "name": "Dalton Schultz",
+              "position": "TE",
+              "nfl_team": "HOU"
             }
           ]
         },
