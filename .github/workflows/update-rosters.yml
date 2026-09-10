@@ -2,7 +2,7 @@ name: Update fantasy rosters
 
 on:
   schedule:
-    - cron: "0 */4 * * *"   # every 4 hours (UTC). GitHub may delay by a few minutes.
+    - cron: "23 */4 * * *"  # every 4 hours at :23 UTC. Off-the-hour minutes get skipped less often by GitHub.
   workflow_dispatch:         # adds a "Run workflow" button in the Actions tab
 
 permissions:
