@@ -209,8 +209,10 @@ def yahoo_cookies():
     (DevTools -> Application -> Cookies -> https://football.fantasysports.yahoo.com)
     into YAHOO_Y / YAHOO_T. Leave blank to only read public leagues.
     """
-    y = os.environ.get("YAHOO_Y", "").strip()
-    t = os.environ.get("YAHOO_T", "").strip()
+    # Remove ALL whitespace (not just the ends): copying a long value out of a
+    # terminal often sneaks in a line break, which makes the request fail.
+    y = "".join(os.environ.get("YAHOO_Y", "").split())
+    t = "".join(os.environ.get("YAHOO_T", "").split())
     if y and t and y != "paste_here":
         return {"Y": y, "T": t}
     return {}
