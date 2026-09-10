@@ -1,0 +1,5 @@
+espn_api
+yahoo_fantasy_api
+yahoo_oauth
+python-dotenv
+requests
