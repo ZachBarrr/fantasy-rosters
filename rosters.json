@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T16:32:49Z",
+  "updated_at": "2026-09-10T22:40:55Z",
   "leagues": [
     {
       "league_name": "McCarthy Precon",
@@ -1045,7 +1045,7 @@
               "nfl_team": "BUF"
             },
             {
-              "name": "Kenneth Walker III",
+              "name": "Kenneth Walker",
               "position": "RB",
               "nfl_team": "KC"
             },
@@ -2141,7 +2141,7 @@
               "nfl_team": "IND"
             },
             {
-              "name": "Kenneth Walker III",
+              "name": "Kenneth Walker",
               "position": "RB",
               "nfl_team": "KC"
             },
