@@ -2,18 +2,25 @@
 Fantasy Roster Tracker
 =======================
 Pulls current rosters from ESPN + Yahoo fantasy football leagues and saves
-them to rosters.json (league -> team -> players, each with their NFL team).
+them to rosters.json (league -> team -> players, each with their NFL team)
+plus a compact, human/AI-readable rosters.txt.
 
 Normal run (fetch + save):        python fantasy_tracker.py
 Look up a player (reads the file): python fantasy_tracker.py --find "josh allen"
 
 Credentials come from environment variables (see SETUP.md). Locally, put them
 in a .env file next to this script; in GitHub Actions they come from Secrets.
+
+Resilience: if one source fails (expired cookies, Yahoo layout change, etc.)
+the run does NOT stop. That league's previous rosters are carried forward and
+marked "stale_since", the problem is recorded under "errors", and the script
+exits with code 2 so GitHub Actions still shows red (after committing the data).
 """
 
 import argparse
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
 
@@ -24,41 +31,49 @@ ESPN_LEAGUES = [
 ]
 ESPN_YEAR = 2026
 
-# Yahoo league ID: the number in the URL, e.g. .../f1/123456  -> 123456
+# Yahoo leagues read through the official API (needs YAHOO_REFRESH_TOKEN; only
+# used once Yahoo approves API access). Leave empty to skip.
 YAHOO_LEAGUES = [
-    {"name": "Dan B's Death League", "league_id": 1585076},  # rename to whatever you call it
+    {"name": "Dan B's Death League", "league_id": 1585076},
 ]
 
-# Yahoo leagues set to "viewable by the public" (commissioner setting). These are
-# read straight from the Yahoo website with no login or API approval needed.
+# Yahoo leagues read straight from the Yahoo website. Public leagues need no
+# login; private ones need the YAHOO_Y / YAHOO_T cookies.
 YAHOO_PUBLIC_LEAGUES = [
     {"name": "Barringtons and Russes", "league_id": 202014},
     {"name": "Dan B's Death League", "league_id": 1585076},  # private: needs YAHOO_Y / YAHOO_T cookies
 ]
 
 OUTPUT_FILE = "rosters.json"
+TEXT_FILE = "rosters.txt"
 YAHOO_TOKEN_FILE = "oauth2.json"  # built from env vars each run, never committed
 # ================================================================================
 
 
+class SourceError(Exception):
+    """A data source could not be read. The run continues with the previous data for that league."""
+
+
 def fail(message):
-    """Print a clear error and stop with a non-zero exit code (so GitHub Actions shows red)."""
+    """Print a clear error and stop with a non-zero exit code (only for setup mistakes)."""
     print("\nERROR: " + message, file=sys.stderr)
     sys.exit(1)
 
 
-def require_env(name):
-    """Read an environment variable or fail with a clear message if it's missing."""
-    value = os.environ.get(name, "").strip()
-    if not value:
-        fail(f"Missing environment variable {name}. Add it to .env (local) or GitHub Secrets (Actions).")
-    return value
+def env(name):
+    """Read an environment variable ('' if missing). Whitespace is removed because
+    values copied out of a terminal often pick up a stray line break."""
+    return "".join(os.environ.get(name, "").split())
+
+
+def now_utc():
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 # ----------------------------------------------------------------------------- ESPN
 
 def get_espn_rosters():
-    """Returns a list of league dicts in the final JSON shape."""
+    """Returns a list of league dicts in the final JSON shape. Raises SourceError on trouble."""
     from espn_api.football import League
     from espn_api.requests.espn_requests import (
         ESPNAccessDenied,
@@ -66,8 +81,10 @@ def get_espn_rosters():
         ESPNUnknownError,
     )
 
-    espn_s2 = require_env("ESPN_S2")
-    swid = require_env("ESPN_SWID")
+    espn_s2 = env("ESPN_S2")
+    swid = env("ESPN_SWID")
+    if not espn_s2 or not swid:
+        raise SourceError("ESPN_S2 / ESPN_SWID are not set (add them to .env locally or GitHub Secrets).")
 
     leagues = []
     for cfg in ESPN_LEAGUES:
@@ -79,38 +96,43 @@ def get_espn_rosters():
                 swid=swid,
             )
         except ESPNAccessDenied:
-            fail(
-                f"ESPN denied access to league {cfg['league_id']} ({cfg['name']}).\n"
-                "  Your espn_s2 / SWID cookies have most likely EXPIRED.\n"
-                "  Fix: log into espn.com, copy fresh cookie values, update ESPN_S2 and ESPN_SWID."
+            raise SourceError(
+                f"ESPN denied access to league {cfg['league_id']} ({cfg['name']}). "
+                "The espn_s2 / SWID cookies have most likely EXPIRED. "
+                "Fix: log into espn.com, copy fresh cookie values, update the ESPN_S2 and ESPN_SWID secrets."
             )
         except ESPNInvalidLeague:
-            fail(f"ESPN league ID {cfg['league_id']} ({cfg['name']}) not found for {ESPN_YEAR}. Check the ID/year.")
+            raise SourceError(f"ESPN league ID {cfg['league_id']} ({cfg['name']}) not found for {ESPN_YEAR}.")
         except ESPNUnknownError as e:
-            fail(f"ESPN returned an unexpected error for league {cfg['league_id']}: {e}")
+            raise SourceError(f"ESPN returned an unexpected error for league {cfg['league_id']}: {e}")
+        except Exception as e:  # network blips etc.
+            raise SourceError(f"ESPN request failed for league {cfg['league_id']}: {e}")
 
         teams = []
         for team in league.teams:
             players = [{"name": p.name, "position": p.position, "nfl_team": p.proTeam} for p in team.roster]
             teams.append({"team_name": team.team_name, "players": players})
+        if not teams:
+            raise SourceError(f"ESPN returned no teams for league {cfg['league_id']} ({cfg['name']}).")
 
         leagues.append({"league_name": cfg["name"], "source": "espn", "teams": teams})
         print(f"ESPN: {cfg['name']} — {len(teams)} teams")
     return leagues
 
 
-# ----------------------------------------------------------------------------- Yahoo
+# ----------------------------------------------------------------------------- Yahoo (official API)
+
+def yahoo_api_is_configured():
+    """True only when a real Yahoo refresh token is present (not blank, not the .env placeholder)."""
+    token = env("YAHOO_REFRESH_TOKEN")
+    return bool(token) and token != "filled_in_by_step_3"
+
 
 def write_yahoo_token_file():
-    """
-    yahoo_oauth wants a JSON file. We build it from env vars so nothing secret
-    lives in the repo. token_time=0 forces an immediate silent refresh using
-    the refresh token — no browser needed.
-    """
     data = {
-        "consumer_key": require_env("YAHOO_CLIENT_ID"),
-        "consumer_secret": require_env("YAHOO_CLIENT_SECRET"),
-        "refresh_token": require_env("YAHOO_REFRESH_TOKEN"),
+        "consumer_key": env("YAHOO_CLIENT_ID"),
+        "consumer_secret": env("YAHOO_CLIENT_SECRET"),
+        "refresh_token": env("YAHOO_REFRESH_TOKEN"),
         "access_token": "expired",  # placeholder; gets replaced by the refresh
         "token_type": "bearer",
         "token_time": 0,
@@ -119,26 +141,24 @@ def write_yahoo_token_file():
         json.dump(data, f)
 
 
-def get_yahoo_rosters():
-    """Returns a list of league dicts in the final JSON shape."""
+def get_yahoo_api_rosters():
+    """Yahoo official API path. Returns league dicts. Raises SourceError on trouble."""
     from yahoo_oauth import OAuth2
     from yahoo_fantasy_api import Game
 
     write_yahoo_token_file()
-
     try:
         oauth = OAuth2(None, None, from_file=YAHOO_TOKEN_FILE)
         if not oauth.token_is_valid():
             oauth.refresh_access_token()
     except Exception as e:
-        fail(
-            "Yahoo login failed. The refresh token is probably invalid or revoked.\n"
-            "  Fix: run  python yahoo_login.py  once locally and update YAHOO_REFRESH_TOKEN.\n"
-            f"  Details: {e}"
+        raise SourceError(
+            "Yahoo API login failed (refresh token invalid or revoked). "
+            f"Fix: run python yahoo_login.py once locally and update YAHOO_REFRESH_TOKEN. Details: {e}"
         )
 
     game = Game(oauth, "nfl")
-    game_id = game.game_id()  # e.g. "461" — Yahoo's code for the current NFL season
+    game_id = game.game_id()
 
     leagues = []
     for cfg in YAHOO_LEAGUES:
@@ -147,35 +167,28 @@ def get_yahoo_rosters():
             league = game.to_league(league_key)
             yahoo_teams = league.teams()
         except Exception as e:
-            fail(f"Could not load Yahoo league {cfg['league_id']} ({cfg['name']}). Check the ID.\n  Details: {e}")
+            raise SourceError(f"Could not load Yahoo league {cfg['league_id']} ({cfg['name']}) via API: {e}")
 
         teams = []
         for team_key, team_info in yahoo_teams.items():
             roster = league.to_team(team_key).roster()
-
-            # Some versions of the library include the NFL team on the roster
-            # entry; if not, look it up in one batch call via player_details().
             missing_ids = [p["player_id"] for p in roster if not p.get("editorial_team_abbr")]
             nfl_team_by_id = {}
             if missing_ids:
                 for details in league.player_details(missing_ids):
                     nfl_team_by_id[int(details["player_id"])] = details.get("editorial_team_abbr", "")
-
             players = []
             for p in roster:
                 nfl_team = p.get("editorial_team_abbr") or nfl_team_by_id.get(int(p["player_id"]), "")
                 players.append({"name": p["name"], "position": p.get("selected_position", ""), "nfl_team": nfl_team.upper()})
-
             teams.append({"team_name": team_info["name"], "players": players})
 
-        leagues.append({"league_name": cfg["name"], "source": "yahoo", "teams": teams})
-        print(f"Yahoo: {cfg['name']} — {len(teams)} teams")
+        leagues.append({"league_name": cfg["name"], "source": "yahoo-api", "teams": teams})
+        print(f"Yahoo (API): {cfg['name']} — {len(teams)} teams")
     return leagues
 
 
-# ----------------------------------------------------------------------------- Yahoo (public leagues, no login)
-
-import re
+# ----------------------------------------------------------------------------- Yahoo (website)
 
 BROWSER_HEADERS = {
     # Yahoo serves the normal page to anything that looks like a browser.
@@ -198,21 +211,9 @@ PLAYER_RE = re.compile(
 )
 
 
-class YahooPublicError(Exception):
-    """Raised when a public-league page can't be read (private league, Yahoo blocked us, layout changed)."""
-
-
 def yahoo_cookies():
-    """
-    Optional: your own Yahoo login cookies, so private leagues can be read the same
-    way the browser does. Copy the values of the "Y" and "T" cookies from Chrome
-    (DevTools -> Application -> Cookies -> https://football.fantasysports.yahoo.com)
-    into YAHOO_Y / YAHOO_T. Leave blank to only read public leagues.
-    """
-    # Remove ALL whitespace (not just the ends): copying a long value out of a
-    # terminal often sneaks in a line break, which makes the request fail.
-    y = "".join(os.environ.get("YAHOO_Y", "").split())
-    t = "".join(os.environ.get("YAHOO_T", "").split())
+    """Optional login cookies (Y and T from Chrome) so private leagues can be read."""
+    y, t = env("YAHOO_Y"), env("YAHOO_T")
     if y and t and y != "paste_here":
         return {"Y": y, "T": t}
     return {}
@@ -220,76 +221,171 @@ def yahoo_cookies():
 
 def fetch_html(url):
     import requests
-    resp = requests.get(url, headers=BROWSER_HEADERS, cookies=yahoo_cookies(), timeout=30)
+    try:
+        resp = requests.get(url, headers=BROWSER_HEADERS, cookies=yahoo_cookies(), timeout=30)
+    except Exception as e:
+        raise SourceError(f"Request to {url} failed: {e}")
     if resp.status_code != 200:
-        raise YahooPublicError(f"Yahoo returned HTTP {resp.status_code} for {url}")
+        raise SourceError(f"Yahoo returned HTTP {resp.status_code} for {url}")
     if "login.yahoo.com" in resp.url:
-        raise YahooPublicError(f"Yahoo redirected {url} to a login page (league is private; set YAHOO_Y / YAHOO_T cookies or ask the commissioner to make it public)")
+        raise SourceError(
+            f"Yahoo redirected {url} to a login page. The league is private and the YAHOO_Y / YAHOO_T "
+            "cookies are missing or EXPIRED. Fix: copy fresh Y and T cookies from Chrome and update the secrets."
+        )
     return resp.text
 
 
-def get_yahoo_public_rosters():
-    """Scrape rosters from Yahoo leagues that are publicly viewable. No credentials needed."""
-    leagues = []
-    for cfg in YAHOO_PUBLIC_LEAGUES:
-        try:
-            leagues.append(scrape_public_league(cfg))
-            print(f"Yahoo (public): {cfg['name']} — {len(leagues[-1]['teams'])} teams")
-        except YahooPublicError as e:
-            # Don't kill the whole run over one league: the others still get saved.
-            print(f"Yahoo (public): {cfg['name']} — SKIPPED: {e}")
-    return leagues
-
-
 def scrape_public_league(cfg):
-    """Read one public league. Raises YahooPublicError if it can't."""
+    """Read one league from the Yahoo website. Raises SourceError if it can't."""
     base = f"https://football.fantasysports.yahoo.com/f1/{cfg['league_id']}"
     html = fetch_html(f"{base}/teams")
 
-    # Build {team_number: team_name}, keeping the first name seen for each number.
-    # Skip generic link labels like "My Team" that also point at a team page.
     team_names = {}
     for league_id, team_num, name in TEAM_LINK_RE.findall(html):
         name = name.strip()
         if int(league_id) == cfg["league_id"] and team_num not in team_names and name and name != "My Team":
             team_names[team_num] = name
     if not team_names:
-        raise YahooPublicError(f"found no teams on {base} — league is probably not set to 'viewable by the public'")
+        raise SourceError(f"Found no teams on {base}/teams — league is not viewable (private without cookies) or the page layout changed.")
 
     teams = []
     for team_num in sorted(team_names, key=int):
         page = fetch_html(f"{base}/{team_num}")
-        players = []
-        seen = set()
+        players, seen = [], set()
         for name, nfl_team, position in PLAYER_RE.findall(page):
             if name in seen:          # the page repeats a few players in side widgets
                 continue
             seen.add(name)
             players.append({"name": name, "position": position, "nfl_team": nfl_team.upper()})
         if not players:
-            raise YahooPublicError(f"found no players on {base}/{team_num} — page layout may have changed")
+            raise SourceError(f"Found no players on {base}/{team_num} — page layout may have changed.")
         teams.append({"team_name": team_names[team_num], "players": players})
 
-    return {"league_name": cfg["name"], "source": "yahoo-public", "teams": teams}
+    return {"league_name": cfg["name"], "source": "yahoo-web", "teams": teams}
 
 
-def yahoo_is_configured():
-    """True only when a real Yahoo refresh token is present (not blank, not the .env placeholder)."""
-    token = os.environ.get("YAHOO_REFRESH_TOKEN", "").strip()
-    return bool(token) and token != "filled_in_by_step_3"
+# ----------------------------------------------------------------------------- Assemble + output
+
+def load_previous():
+    """Previous rosters.json (if any) so a failing league can be carried forward."""
+    try:
+        with open(OUTPUT_FILE) as f:
+            data = json.load(f)
+        return {lg["league_name"]: lg for lg in data.get("leagues", [])}
+    except (FileNotFoundError, ValueError, KeyError):
+        return {}
 
 
-# ----------------------------------------------------------------------------- Output
+def collect_all():
+    """Run every source. Returns (leagues, errors). Never raises for a single bad source."""
+    previous = load_previous()
+    results = {}   # league_name -> league dict (fresh)
+    errors = []    # {"league": ..., "message": ...}
 
-def save_to_json(leagues):
+    def record(league_name, message):
+        print(f"PROBLEM [{league_name}]: {message}")
+        errors.append({"league": league_name, "message": message})
+
+    # ESPN
+    try:
+        for lg in get_espn_rosters():
+            results[lg["league_name"]] = lg
+    except SourceError as e:
+        for cfg in ESPN_LEAGUES:
+            record(cfg["name"], str(e))
+    except Exception as e:
+        for cfg in ESPN_LEAGUES:
+            record(cfg["name"], f"Unexpected ESPN error: {e!r}")
+
+    # Yahoo website (public leagues, plus private ones when cookies are set)
+    for cfg in YAHOO_PUBLIC_LEAGUES:
+        try:
+            lg = scrape_public_league(cfg)
+            results[lg["league_name"]] = lg
+            print(f"Yahoo (web): {cfg['name']} — {len(lg['teams'])} teams")
+        except SourceError as e:
+            record(cfg["name"], str(e))
+        except Exception as e:
+            record(cfg["name"], f"Unexpected Yahoo error: {e!r}")
+
+    # Yahoo official API (only if configured) — fills in anything the website path missed
+    if yahoo_api_is_configured():
+        try:
+            for lg in get_yahoo_api_rosters():
+                if lg["league_name"] not in results:
+                    results[lg["league_name"]] = lg
+        except SourceError as e:
+            record("Yahoo API", str(e))
+        except Exception as e:
+            record("Yahoo API", f"Unexpected Yahoo API error: {e!r}")
+    else:
+        print("Yahoo (API): not configured — skipped (website path is used instead)")
+
+    # Final league list in config order; carry forward anything that failed this run.
+    ordered_names = [c["name"] for c in ESPN_LEAGUES]
+    for c in YAHOO_PUBLIC_LEAGUES + YAHOO_LEAGUES:
+        if c["name"] not in ordered_names:
+            ordered_names.append(c["name"])
+
+    leagues = []
+    for name in ordered_names:
+        if name in results:
+            lg = results[name]
+            lg.pop("stale_since", None)
+            lg["fetched_at"] = now_utc()
+            leagues.append(lg)
+        elif name in previous:
+            lg = previous[name]
+            lg.setdefault("stale_since", lg.get("fetched_at") or now_utc())
+            leagues.append(lg)
+            print(f"CARRIED FORWARD [{name}]: using previous rosters (stale since {lg['stale_since']})")
+        else:
+            print(f"MISSING [{name}]: no fresh data and nothing to carry forward")
+
+    # Errors only count if some league ended up without fresh data (e.g. the API
+    # path failing is harmless when the website path already got that league).
+    fresh = {lg["league_name"] for lg in leagues if "stale_since" not in lg}
+    if all(name in fresh for name in ordered_names):
+        errors = []
+    else:
+        errors = [e for e in errors if e["league"] not in fresh]
+    return leagues, errors
+
+
+def save_outputs(leagues, errors):
     data = {
-        "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "updated_at": now_utc(),
+        "status": "ok" if not errors else "problem",
+        "errors": errors,
         "leagues": leagues,
     }
     with open(OUTPUT_FILE, "w") as f:
         json.dump(data, f, indent=2)
+
+    # Compact text version: one line per team. Easy for people and AI models to read.
+    lines = ["FANTASY ROSTERS SNAPSHOT",
+             f"updated_at: {data['updated_at']} (UTC; Phoenix = UTC-7)",
+             f"leagues: {len(leagues)} | teams: {sum(len(lg['teams']) for lg in leagues)} | "
+             f"players: {sum(len(t['players']) for lg in leagues for t in lg['teams'])}",
+             f"status: {data['status']}"]
+    for e in errors:
+        lines.append(f"error: [{e['league']}] {e['message']}")
+    for lg in leagues:
+        stale = f" — STALE, data from {lg['stale_since']}" if lg.get("stale_since") else ""
+        lines.append("")
+        lines.append(f"## {lg['league_name']} ({lg['source']}){stale}")
+        for t in lg["teams"]:
+            plist = "; ".join(f"{p['name']} {p['position']}-{p['nfl_team']}" for p in t["players"])
+            lines.append(f"{t['team_name']}: {plist}")
+    lines.append("")
+    lines.append("END")
+    with open(TEXT_FILE, "w") as f:
+        f.write("\n".join(lines) + "\n")
+
     total = sum(len(t["players"]) for lg in leagues for t in lg["teams"])
-    print(f"\nSaved {total} players across {len(leagues)} leagues to {OUTPUT_FILE}")
+    print(f"\nSaved {total} players across {len(leagues)} leagues to {OUTPUT_FILE} and {TEXT_FILE}")
+    if errors:
+        print(f"{len(errors)} problem(s) recorded — see 'errors' in {OUTPUT_FILE}")
 
 
 def lookup_player(query):
@@ -303,10 +399,11 @@ def lookup_player(query):
     query = query.lower()
     hits = []
     for lg in data["leagues"]:
+        stale = f" (STALE since {lg['stale_since']})" if lg.get("stale_since") else ""
         for team in lg["teams"]:
             for p in team["players"]:
                 if query in p["name"].lower():
-                    hits.append((p["name"], p.get("position", ""), p["nfl_team"], team["team_name"], lg["league_name"]))
+                    hits.append((p["name"], p.get("position", ""), p["nfl_team"], team["team_name"], lg["league_name"] + stale))
 
     print(f"Data as of {data['updated_at']}")
     if not hits:
@@ -332,10 +429,10 @@ if __name__ == "__main__":
     if args.find:
         lookup_player(args.find)
     else:
-        all_leagues = get_espn_rosters()
-        all_leagues += get_yahoo_public_rosters()
-        if yahoo_is_configured():
-            all_leagues += get_yahoo_rosters()
-        else:
-            print("Yahoo: skipped (YAHOO_REFRESH_TOKEN not set yet — run yahoo_login.py once Yahoo approves API access)")
-        save_to_json(all_leagues)
+        all_leagues, problems = collect_all()
+        if not all_leagues:
+            fail("No league data at all (every source failed and there is no previous rosters.json).")
+        save_outputs(all_leagues, problems)
+        # Exit 2 when something needs attention. The workflow commits the data first
+        # and checks this afterwards, so the Actions tab turns red without losing data.
+        sys.exit(2 if problems else 0)
