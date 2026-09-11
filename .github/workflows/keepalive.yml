@@ -1,0 +1,42 @@
+name: Keepalive scheduler
+
+# GitHub's built-in cron never fired for this repo, so this workflow keeps the
+# refresh going by itself: refresh rosters -> wait ~4 hours -> start the next
+# cycle. Public repos get unlimited free Actions minutes, so the wait costs
+# nothing. Start it once with "Run workflow"; after that it re-launches itself.
+# (update-rosters.yml also restarts it automatically if it ever stops.)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: keepalive
+  cancel-in-progress: false
+
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Refresh rosters now
+        run: gh workflow run update-rosters.yml --repo "$GITHUB_REPOSITORY" --ref main
+
+      - name: Wait about 4 hours
+        run: sleep 14100
+
+      - name: Start the next cycle
+        if: always()
+        run: |
+          for attempt in 1 2 3 4 5; do
+            if gh workflow run keepalive.yml --repo "$GITHUB_REPOSITORY" --ref main; then
+              echo "Next cycle queued."; exit 0
+            fi
+            echo "Dispatch failed (attempt $attempt), retrying in 60s..."; sleep 60
+          done
+          echo "Could not queue the next cycle." >&2; exit 1
