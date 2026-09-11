@@ -2,16 +2,22 @@ name: Update fantasy rosters
 
 on:
   schedule:
-    - cron: "23 */4 * * *"  # every 4 hours at :23 UTC. Off-the-hour minutes get skipped less often by GitHub.
+    - cron: "23 */2 * * *"  # every 2 hours at :23 UTC (GitHub often runs these late or skips them;
+                            # the "Keepalive scheduler" workflow is the reliable driver)
   workflow_dispatch:         # adds a "Run workflow" button in the Actions tab
 
 permissions:
-  contents: write            # needed so the workflow can push rosters.json
+  contents: write            # needed so the workflow can push rosters.json / rosters.txt
   actions: write             # needed to (re)start the keepalive scheduler
+
+concurrency:
+  group: update-rosters
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -25,6 +31,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Fetch rosters
+        id: fetch
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
@@ -33,19 +40,27 @@ jobs:
           YAHOO_REFRESH_TOKEN: ${{ secrets.YAHOO_REFRESH_TOKEN }}
           YAHOO_Y: ${{ secrets.YAHOO_Y }}
           YAHOO_T: ${{ secrets.YAHOO_T }}
-        run: python fantasy_tracker.py
+        run: |
+          # Don't stop the job on a problem: commit whatever data we have first,
+          # then report the problem in the last step so the run still turns red.
+          set +e
+          python fantasy_tracker.py
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add rosters.json
-          # "git diff --staged --quiet" exits 0 if nothing changed -> skip commit
+          git add rosters.json rosters.txt
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "Update rosters $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            # Retry the push a few times in case another run pushed in between.
+            for attempt in 1 2 3; do
+              git push && break
+              git pull --rebase && sleep 5
+            done
           fi
 
       - name: Make sure the keepalive scheduler is running
@@ -53,13 +68,21 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          active=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow keepalive.yml \
-                     --status in_progress --json databaseId --jq 'length')
-          queued=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow keepalive.yml \
-                     --status queued --json databaseId --jq 'length')
-          if [ "$((active + queued))" -eq 0 ]; then
+          active=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow keepalive.yml --limit 10 \
+                     --json status --jq '[.[] | select(.status != "completed")] | length')
+          if [ "${active:-0}" -eq 0 ]; then
             echo "Keepalive not running - starting it."
             gh workflow run keepalive.yml --repo "$GITHUB_REPOSITORY" --ref main || echo "Could not start keepalive (will retry next run)."
           else
-            echo "Keepalive already running ($active active, $queued queued)."
+            echo "Keepalive already running ($active active/queued)."
           fi
+
+      - name: Report problems
+        if: always()
+        run: |
+          code="${{ steps.fetch.outputs.exit_code }}"
+          if [ -z "$code" ] || [ "$code" != "0" ]; then
+            echo "::error::fantasy_tracker.py reported a problem (exit code ${code:-unknown}). See the 'Fetch rosters' step. Data was still committed."
+            exit 1
+          fi
+          echo "All sources OK."
