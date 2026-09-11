@@ -1,5 +1,7 @@
 {
-  "updated_at": "2026-09-11T01:31:29Z",
+  "updated_at": "2026-09-11T02:02:14Z",
+  "status": "ok",
+  "errors": [],
   "leagues": [
     {
       "league_name": "McCarthy Precon",
@@ -865,11 +867,12 @@
             }
           ]
         }
-      ]
+      ],
+      "fetched_at": "2026-09-11T02:02:14Z"
     },
     {
       "league_name": "Barringtons and Russes",
-      "source": "yahoo-public",
+      "source": "yahoo-web",
       "teams": [
         {
           "team_name": "Zach",
@@ -1671,11 +1674,12 @@
             }
           ]
         }
-      ]
+      ],
+      "fetched_at": "2026-09-11T02:02:14Z"
     },
     {
       "league_name": "Dan B's Death League",
-      "source": "yahoo-public",
+      "source": "yahoo-web",
       "teams": [
         {
           "team_name": "Deep Ball Dan B",
@@ -2427,7 +2431,8 @@
             }
           ]
         }
-      ]
+      ],
+      "fetched_at": "2026-09-11T02:02:14Z"
     }
   ]
 }
