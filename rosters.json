@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T22:40:55Z",
+  "updated_at": "2026-09-11T01:31:29Z",
   "leagues": [
     {
       "league_name": "McCarthy Precon",
@@ -849,11 +849,6 @@
               "nfl_team": "ARI"
             },
             {
-              "name": "Jordyn Tyson",
-              "position": "WR",
-              "nfl_team": "NO"
-            },
-            {
               "name": "Jaguars D/ST",
               "position": "D/ST",
               "nfl_team": "JAX"
@@ -862,6 +857,11 @@
               "name": "Michael Mayer",
               "position": "TE",
               "nfl_team": "LV"
+            },
+            {
+              "name": "Jake Bates",
+              "position": "K",
+              "nfl_team": "DET"
             }
           ]
         }
@@ -2231,14 +2231,19 @@
               "nfl_team": "CAR"
             },
             {
-              "name": "Brock Bowers",
+              "name": "Dalton Schultz",
               "position": "TE",
-              "nfl_team": "LV"
+              "nfl_team": "HOU"
             },
             {
               "name": "Davante Adams",
               "position": "WR",
               "nfl_team": "LAR"
+            },
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "nfl_team": "LV"
             },
             {
               "name": "Brian Thomas Jr.",
@@ -2269,11 +2274,6 @@
               "name": "Jordyn Tyson",
               "position": "WR",
               "nfl_team": "NO"
-            },
-            {
-              "name": "Dalton Schultz",
-              "position": "TE",
-              "nfl_team": "HOU"
             }
           ]
         },
