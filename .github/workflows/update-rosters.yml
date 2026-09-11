@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write            # needed so the workflow can push rosters.json
+  actions: write             # needed to (re)start the keepalive scheduler
 
 jobs:
   update:
@@ -45,4 +46,20 @@ jobs:
           else
             git commit -m "Update rosters $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push
+          fi
+
+      - name: Make sure the keepalive scheduler is running
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          active=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow keepalive.yml \
+                     --status in_progress --json databaseId --jq 'length')
+          queued=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow keepalive.yml \
+                     --status queued --json databaseId --jq 'length')
+          if [ "$((active + queued))" -eq 0 ]; then
+            echo "Keepalive not running - starting it."
+            gh workflow run keepalive.yml --repo "$GITHUB_REPOSITORY" --ref main || echo "Could not start keepalive (will retry next run)."
+          else
+            echo "Keepalive already running ($active active, $queued queued)."
           fi
