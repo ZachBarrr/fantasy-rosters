@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-13T18:40:17Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-13T20:38:50Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 452
 status: ok
 
@@ -25,7 +25,7 @@ Magic Move Dan B: Lamar Jackson QB-BAL; Jonathan Taylor RB-IND; Javonte Williams
 wet willy: Bo Nix QB-DEN; Omarion Hampton RB-LAC; Ashton Jeanty RB-LV; Puka Nacua WR-LAR; Ladd McConkey WR-LAC; Tyler Warren TE-IND; Jonathon Brooks RB-CAR; Bhayshul Tuten RB-JAX; Marvin Harrison Jr. WR-ARI; Carnell Tate WR-TEN; Blake Corum RB-LAR; Makai Lemon WR-PHI; Matthew Golden WR-GB; Tyler Bass K-BUF; Patriots DEF-NE
 All Too Well- Coached: Drake Maye QB-NE; Chase Brown RB-CIN; Bucky Irving RB-TB; Amon-Ra St. Brown WR-DET; Chris Olave WR-NO; Sam LaPorta TE-DET; Tee Higgins WR-CIN; TreVeyon Henderson RB-NE; Trevor Lawrence QB-JAX; J.K. Dobbins RB-DEN; Stefon Diggs WR-WAS; Isaiah Likely TE-NYG; Wan'Dale Robinson WR-TEN; Cairo Santos K-CHI; Vikings DEF-MIN
 DaddyDart: Joe Burrow QB-CIN; Bijan Robinson RB-ATL; Cam Skattebo RB-NYG; George Pickens WR-DAL; Drake London WR-ATL; Colston Loveland TE-CHI; Davante Adams WR-LAR; Jaxson Dart QB-NYG; Courtland Sutton WR-DEN; Jordan Mason RB-MIN; RJ Harvey RB-DEN; Juwan Johnson TE-NO; Chris Rodriguez Jr. RB-JAX; Brandon Aubrey K-DAL; Eagles DEF-PHI
-Bakers Bakery: Josh Allen QB-BUF; Kyren Williams RB-LAR; David Montgomery RB-HOU; Jaxon Smith-Njigba WR-SEA; Justin Jefferson WR-MIN; Kyle Pitts Sr. TE-ATL; Emeka Egbuka WR-TB; MarShawn Lloyd RB-GB; Josh Downs WR-IND; Quentin Johnston WR-LAC; Michael Pittman Jr. WR-PIT; Dallas Goedert TE-PHI; Patrick Mahomes QB-KC; Tyler Loop K-BAL; Lions DEF-DET
+Bakers Bakery: Josh Allen QB-BUF; Kyren Williams RB-LAR; David Montgomery RB-HOU; Jaxon Smith-Njigba WR-SEA; Justin Jefferson WR-MIN; Kyle Pitts Sr. TE-ATL; Emeka Egbuka WR-TB; Quentin Johnston WR-LAC; MarShawn Lloyd RB-GB; Josh Downs WR-IND; Michael Pittman Jr. WR-PIT; Dallas Goedert TE-PHI; Patrick Mahomes QB-KC; Tyler Loop K-BAL; Lions DEF-DET
 
 ## Dan B's Death League (yahoo-web)
 Deep Ball Dan B: Brock Purdy QB-SF; Chase Brown RB-CIN; De'Von Achane RB-MIA; Jaxon Smith-Njigba WR-SEA; Rashee Rice WR-KC; Trey McBride TE-ARI; Quinshon Judkins RB-CLE; Christian Watson WR-GB; Alec Pierce WR-IND; Michael Wilson WR-ARI; Michael Pittman Jr. WR-PIT; Kyle Monangai RB-CHI; Patrick Mahomes QB-KC; Rashid Shaheed WR-SEA
