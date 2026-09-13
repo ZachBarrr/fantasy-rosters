@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-13T16:28:26Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-13T16:41:42Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 452
 status: ok
 
@@ -36,7 +36,7 @@ Jimmy Still Hates Jerry: Dak Prescott QB-DAL; Christian McCaffrey RB-SF; Javonte
 No-Huddle Hallie: Lamar Jackson QB-BAL; Jahmyr Gibbs RB-DET; Jadarian Price RB-SEA; Drake London WR-ATL; Parker Washington WR-JAX; Tyler Warren TE-IND; Jaylen Warren RB-PIT; Matthew Stafford QB-LAR; DK Metcalf WR-PIT; RJ Harvey RB-DEN; Courtland Sutton WR-DEN; Mark Andrews TE-BAL; Aaron Jones Sr. RB-MIN; Adonai Mitchell WR-NYJ
 Count Scott: Drake Maye QB-NE; Jonathan Taylor RB-IND; Kenneth Walker RB-KC; Chris Olave WR-NO; Tee Higgins WR-CIN; Sam LaPorta TE-DET; Bucky Irving RB-TB; Rome Odunze WR-CHI; Jonathon Brooks RB-CAR; George Kittle TE-SF; Jordan Addison WR-MIN; Wan'Dale Robinson WR-TEN; Rachaad White RB-WAS; Malik Willis QB-MIA
 Bakers Bakery: Joe Burrow QB-CIN; Kyren Williams RB-LAR; Rhamondre Stevenson RB-NE; Amon-Ra St. Brown WR-DET; Tetairoa McMillan WR-CAR; Dalton Schultz TE-HOU; Davante Adams WR-LAR; Brock Bowers TE-LV; Brian Thomas Jr. WR-JAX; Tony Pollard RB-TEN; Quentin Johnston WR-LAC; Jordan Mason RB-MIN; Baker Mayfield QB-TB; Jordyn Tyson WR-NO
-Phil Ming (Asian Photographer): Josh Allen QB-BUF; Saquon Barkley RB-PHI; Cam Skattebo RB-NYG; Malik Nabers WR-NYG; Marvin Harrison Jr. WR-ARI; Travis Kelce TE-KC; Mike Evans WR-SF; Caleb Williams QB-CHI; Chris Godwin Jr. WR-TB; Jaxson Dart QB-NYG; Matthew Golden WR-GB; Dalton Kincaid TE-BUF; Xavier Worthy WR-KC; Alvin Kamara RB-NO
+Phil Ming (Asian Photographer): Josh Allen QB-BUF; Saquon Barkley RB-PHI; Cam Skattebo RB-NYG; Marvin Harrison Jr. WR-ARI; Chris Godwin Jr. WR-TB; Travis Kelce TE-KC; Mike Evans WR-SF; Malik Nabers WR-NYG; Caleb Williams QB-CHI; Jaxson Dart QB-NYG; Matthew Golden WR-GB; Dalton Kincaid TE-BUF; Xavier Worthy WR-KC; Alvin Kamara RB-NO
 Viva La Touchdown: Justin Herbert QB-LAC; Omarion Hampton RB-LAC; David Montgomery RB-HOU; Ja'Marr Chase WR-CIN; Nico Collins WR-HOU; Colston Loveland TE-CHI; Zay Flowers WR-BAL; MarShawn Lloyd RB-GB; Rico Dowdle RB-PIT; De'Zhaun Stribling WR-SF; Jared Goff QB-DET; Isaiah Likely TE-NYG; Josh Jacobs RB-GB; Tre Tucker WR-LV
 
 END
