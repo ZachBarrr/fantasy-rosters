@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-13T22:37:10Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-14T00:17:02Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 452
 status: ok
 
@@ -29,7 +29,7 @@ Bakers Bakery: Josh Allen QB-BUF; Kyren Williams RB-LAR; David Montgomery RB-HOU
 
 ## Dan B's Death League (yahoo-web)
 Deep Ball Dan B: Brock Purdy QB-SF; Chase Brown RB-CIN; De'Von Achane RB-MIA; Jaxon Smith-Njigba WR-SEA; Rashee Rice WR-KC; Trey McBride TE-ARI; Quinshon Judkins RB-CLE; Christian Watson WR-GB; Alec Pierce WR-IND; Michael Wilson WR-ARI; Michael Pittman Jr. WR-PIT; Kyle Monangai RB-CHI; Patrick Mahomes QB-KC; Rashid Shaheed WR-SEA
-Dibs on St. Brown: Jayden Daniels QB-WAS; James Cook III RB-BUF; Jeremiyah Love RB-ARI; Justin Jefferson WR-MIN; DeVonta Smith WR-PHI; Tucker Kraft TE-GB; Garrett Wilson WR-NYJ; Jameson Williams WR-DET; Jayden Reed WR-GB; J.K. Dobbins RB-DEN; Kenny Gainwell RB-TB; Bo Nix QB-DEN; Romeo Doubs WR-NE; Jakobi Meyers WR-JAX
+1 More Week!: Jayden Daniels QB-WAS; James Cook III RB-BUF; Jeremiyah Love RB-ARI; Justin Jefferson WR-MIN; DeVonta Smith WR-PHI; Tucker Kraft TE-GB; Garrett Wilson WR-NYJ; Jameson Williams WR-DET; Jayden Reed WR-GB; J.K. Dobbins RB-DEN; Kenny Gainwell RB-TB; Bo Nix QB-DEN; Romeo Doubs WR-NE; Jakobi Meyers WR-JAX
 willy: Jalen Hurts QB-PHI; Derrick Henry RB-BAL; D'Andre Swift RB-CHI; Puka Nacua WR-LAR; George Pickens WR-DAL; Juwan Johnson TE-NO; Jaylen Waddle WR-DEN; Emeka Egbuka WR-TB; TreVeyon Henderson RB-NE; Carnell Tate WR-TEN; Josh Downs WR-IND; Jacory Croskey-Merritt RB-WAS; Chris Rodriguez Jr. RB-JAX; Woody Marks RB-HOU
 No Cap T A N: Trevor Lawrence QB-JAX; Bijan Robinson RB-ATL; Ashton Jeanty RB-LV; A.J. Brown WR-NE; Ladd McConkey WR-LAC; Kyle Pitts Sr. TE-ATL; Travis Etienne Jr. RB-NO; DJ Moore WR-BUF; Bhayshul Tuten RB-JAX; Stefon Diggs WR-WAS; Makai Lemon WR-PHI; Kyler Murray QB-MIN; Keaton Mitchell RB-LAC; Jake Ferguson TE-DAL
 Jimmy Still Hates Jerry: Dak Prescott QB-DAL; Christian McCaffrey RB-SF; Javonte Williams RB-DAL; CeeDee Lamb WR-DAL; Luther Burden III WR-CHI; Harold Fannin Jr. TE-CLE; Breece Hall RB-NYJ; Terry McLaurin WR-WAS; Chuba Hubbard RB-CAR; Blake Corum RB-LAR; KC Concepcion WR-CLE; Dallas Goedert TE-PHI; Jordan Love QB-GB; Khalil Shakir WR-BUF
