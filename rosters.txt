@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-15T10:10:20Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-15T11:54:21Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 452
 status: ok
 
