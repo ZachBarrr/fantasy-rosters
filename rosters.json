@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T06:13:17Z",
+  "updated_at": "2026-09-15T08:11:47Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -868,7 +868,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-15T06:13:17Z"
+      "fetched_at": "2026-09-15T08:11:47Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -878,9 +878,9 @@
           "team_name": "Zach",
           "players": [
             {
-              "name": "Kyler Murray",
+              "name": "Jayden Daniels",
               "position": "QB",
-              "nfl_team": "MIN"
+              "nfl_team": "WAS"
             },
             {
               "name": "Saquon Barkley",
@@ -908,19 +908,14 @@
               "nfl_team": "CLE"
             },
             {
-              "name": "Jameson Williams",
-              "position": "WR",
-              "nfl_team": "DET"
-            },
-            {
-              "name": "Jayden Daniels",
-              "position": "QB",
-              "nfl_team": "WAS"
-            },
-            {
               "name": "Quinshon Judkins",
               "position": "RB",
               "nfl_team": "CLE"
+            },
+            {
+              "name": "Jameson Williams",
+              "position": "WR",
+              "nfl_team": "DET"
             },
             {
               "name": "Chuba Hubbard",
@@ -936,6 +931,11 @@
               "name": "Kenny Gainwell",
               "position": "RB",
               "nfl_team": "TB"
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "nfl_team": "MIN"
             },
             {
               "name": "Xavier Worthy",
@@ -1633,11 +1633,6 @@
               "nfl_team": "TB"
             },
             {
-              "name": "Quentin Johnston",
-              "position": "WR",
-              "nfl_team": "LAC"
-            },
-            {
               "name": "MarShawn Lloyd",
               "position": "RB",
               "nfl_team": "GB"
@@ -1646,6 +1641,11 @@
               "name": "Josh Downs",
               "position": "WR",
               "nfl_team": "IND"
+            },
+            {
+              "name": "Quentin Johnston",
+              "position": "WR",
+              "nfl_team": "LAC"
             },
             {
               "name": "Michael Pittman Jr.",
@@ -1675,7 +1675,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-15T06:13:17Z"
+      "fetched_at": "2026-09-15T08:11:47Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2432,7 +2432,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-15T06:13:17Z"
+      "fetched_at": "2026-09-15T08:11:47Z"
     }
   ]
 }

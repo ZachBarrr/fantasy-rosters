@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-15T06:13:17Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-15T08:11:47Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 452
 status: ok
 
@@ -16,7 +16,7 @@ PukaChuuu: Puka Nacua WR-LAR; Chase Brown RB-CIN; Nico Collins WR-HOU; Josh Alle
 Super Bo or Bust: Christian McCaffrey RB-SF; Brock Bowers TE-LV; Rashee Rice WR-KC; Breece Hall RB-NYJ; Jaylen Waddle WR-DEN; Luther Burden III WR-CHI; Rhamondre Stevenson RB-NE; MarShawn Lloyd RB-GB; Michael Wilson WR-ARI; Blake Corum RB-LAR; Josh Jacobs RB-GB; Bo Nix QB-DEN; De'Zhaun Stribling WR-SF; Tyler Allgeier RB-ARI; Jaguars D/ST D/ST-JAX; Michael Mayer TE-LV; Jake Bates K-DET
 
 ## Barringtons and Russes (yahoo-web)
-Zach: Kyler Murray QB-MIN; Saquon Barkley RB-PHI; Jeremiyah Love RB-ARI; CeeDee Lamb WR-DAL; Zay Flowers WR-BAL; Harold Fannin Jr. TE-CLE; Jameson Williams WR-DET; Jayden Daniels QB-WAS; Quinshon Judkins RB-CLE; Chuba Hubbard RB-CAR; Alec Pierce WR-IND; Kenny Gainwell RB-TB; Xavier Worthy WR-KC; Harrison Mevis K-LAR; Rams DEF-LAR
+Zach: Jayden Daniels QB-WAS; Saquon Barkley RB-PHI; Jeremiyah Love RB-ARI; CeeDee Lamb WR-DAL; Zay Flowers WR-BAL; Harold Fannin Jr. TE-CLE; Quinshon Judkins RB-CLE; Jameson Williams WR-DET; Chuba Hubbard RB-CAR; Alec Pierce WR-IND; Kenny Gainwell RB-TB; Kyler Murray QB-MIN; Xavier Worthy WR-KC; Harrison Mevis K-LAR; Rams DEF-LAR
 Baseball Is Better: Dak Prescott QB-DAL; Christian McCaffrey RB-SF; Derrick Henry RB-BAL; DeVonta Smith WR-PHI; Tetairoa McMillan WR-CAR; Mark Andrews TE-BAL; Jaylen Warren RB-PIT; Terry McLaurin WR-WAS; Jadarian Price RB-SEA; Jayden Reed WR-GB; KC Concepcion WR-CLE; Jordan Love QB-GB; Aaron Jones Sr. RB-MIN; Ka'imi Fairbairn K-HOU; Jaguars DEF-JAX
 Dak to December: Caleb Williams QB-CHI; James Cook III RB-BUF; Kenneth Walker RB-KC; Malik Nabers WR-NYG; Garrett Wilson WR-NYJ; Travis Kelce TE-KC; Breece Hall RB-NYJ; Parker Washington WR-JAX; Luther Burden III WR-CHI; Chris Godwin Jr. WR-TB; Dalton Kincaid TE-BUF; Matthew Stafford QB-LAR; Jalen Coker WR-CAR; Cameron Dicker K-LAC; Cowboys DEF-DAL
 Go Sports: Jalen Hurts QB-PHI; Jahmyr Gibbs RB-DET; D'Andre Swift RB-CHI; Nico Collins WR-HOU; Rashee Rice WR-KC; Jake Ferguson TE-DAL; Christian Watson WR-GB; Brock Bowers TE-LV; Tony Pollard RB-TEN; Brian Thomas Jr. WR-JAX; Jordan Addison WR-MIN; Baker Mayfield QB-TB; Kyle Monangai RB-CHI; Will Reichard K-MIN; Ravens DEF-BAL
@@ -25,7 +25,7 @@ Magic Move Dan B: Lamar Jackson QB-BAL; Jonathan Taylor RB-IND; Javonte Williams
 wet willy: Bo Nix QB-DEN; Omarion Hampton RB-LAC; Ashton Jeanty RB-LV; Puka Nacua WR-LAR; Ladd McConkey WR-LAC; Tyler Warren TE-IND; Jonathon Brooks RB-CAR; Bhayshul Tuten RB-JAX; Marvin Harrison Jr. WR-ARI; Carnell Tate WR-TEN; Blake Corum RB-LAR; Makai Lemon WR-PHI; Matthew Golden WR-GB; Tyler Bass K-BUF; Patriots DEF-NE
 All Too Well- Coached: Drake Maye QB-NE; Chase Brown RB-CIN; Bucky Irving RB-TB; Amon-Ra St. Brown WR-DET; Chris Olave WR-NO; Sam LaPorta TE-DET; Tee Higgins WR-CIN; TreVeyon Henderson RB-NE; Trevor Lawrence QB-JAX; J.K. Dobbins RB-DEN; Stefon Diggs WR-WAS; Isaiah Likely TE-NYG; Wan'Dale Robinson WR-TEN; Cairo Santos K-CHI; Vikings DEF-MIN
 DaddyDart: Joe Burrow QB-CIN; Bijan Robinson RB-ATL; Cam Skattebo RB-NYG; George Pickens WR-DAL; Drake London WR-ATL; Colston Loveland TE-CHI; Davante Adams WR-LAR; Jaxson Dart QB-NYG; Courtland Sutton WR-DEN; Jordan Mason RB-MIN; RJ Harvey RB-DEN; Juwan Johnson TE-NO; Chris Rodriguez Jr. RB-JAX; Brandon Aubrey K-DAL; Eagles DEF-PHI
-Bakers Bakery: Josh Allen QB-BUF; Kyren Williams RB-LAR; David Montgomery RB-HOU; Jaxon Smith-Njigba WR-SEA; Justin Jefferson WR-MIN; Kyle Pitts Sr. TE-ATL; Emeka Egbuka WR-TB; Quentin Johnston WR-LAC; MarShawn Lloyd RB-GB; Josh Downs WR-IND; Michael Pittman Jr. WR-PIT; Dallas Goedert TE-PHI; Patrick Mahomes QB-KC; Tyler Loop K-BAL; Lions DEF-DET
+Bakers Bakery: Josh Allen QB-BUF; Kyren Williams RB-LAR; David Montgomery RB-HOU; Jaxon Smith-Njigba WR-SEA; Justin Jefferson WR-MIN; Kyle Pitts Sr. TE-ATL; Emeka Egbuka WR-TB; MarShawn Lloyd RB-GB; Josh Downs WR-IND; Quentin Johnston WR-LAC; Michael Pittman Jr. WR-PIT; Dallas Goedert TE-PHI; Patrick Mahomes QB-KC; Tyler Loop K-BAL; Lions DEF-DET
 
 ## Dan B's Death League (yahoo-web)
 Deep Ball Dan B: Brock Purdy QB-SF; Chase Brown RB-CIN; De'Von Achane RB-MIA; Jaxon Smith-Njigba WR-SEA; Rashee Rice WR-KC; Trey McBride TE-ARI; Quinshon Judkins RB-CLE; Christian Watson WR-GB; Alec Pierce WR-IND; Michael Wilson WR-ARI; Michael Pittman Jr. WR-PIT; Kyle Monangai RB-CHI; Patrick Mahomes QB-KC; Rashid Shaheed WR-SEA
