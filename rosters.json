@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T12:09:05Z",
+  "updated_at": "2026-09-15T14:07:34Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -868,7 +868,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-15T12:09:05Z"
+      "fetched_at": "2026-09-15T14:07:34Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1008,7 +1008,7 @@
               "nfl_team": "GB"
             },
             {
-              "name": "KC Concepcion",
+              "name": "KC Concepcion Jr.",
               "position": "WR",
               "nfl_team": "CLE"
             },
@@ -1675,7 +1675,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-15T12:09:05Z"
+      "fetched_at": "2026-09-15T14:07:34Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -1925,14 +1925,14 @@
               "nfl_team": "LV"
             },
             {
-              "name": "A.J. Brown",
-              "position": "WR",
-              "nfl_team": "NE"
-            },
-            {
               "name": "Ladd McConkey",
               "position": "WR",
               "nfl_team": "LAC"
+            },
+            {
+              "name": "DJ Moore",
+              "position": "WR",
+              "nfl_team": "BUF"
             },
             {
               "name": "Kyle Pitts Sr.",
@@ -1945,9 +1945,9 @@
               "nfl_team": "NO"
             },
             {
-              "name": "DJ Moore",
+              "name": "A.J. Brown",
               "position": "WR",
-              "nfl_team": "BUF"
+              "nfl_team": "NE"
             },
             {
               "name": "Bhayshul Tuten",
@@ -2035,7 +2035,7 @@
               "nfl_team": "LAR"
             },
             {
-              "name": "KC Concepcion",
+              "name": "KC Concepcion Jr.",
               "position": "WR",
               "nfl_team": "CLE"
             },
@@ -2432,7 +2432,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-15T12:09:05Z"
+      "fetched_at": "2026-09-15T14:07:34Z"
     }
   ]
 }
