@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T18:04:23Z",
+  "updated_at": "2026-09-15T20:02:48Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -868,7 +868,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-15T18:04:23Z"
+      "fetched_at": "2026-09-15T20:02:48Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1208,19 +1208,14 @@
               "nfl_team": "MIA"
             },
             {
-              "name": "Travis Etienne Jr.",
+              "name": "Rhamondre Stevenson",
               "position": "RB",
-              "nfl_team": "NO"
+              "nfl_team": "NE"
             },
             {
               "name": "Ja'Marr Chase",
               "position": "WR",
               "nfl_team": "CIN"
-            },
-            {
-              "name": "A.J. Brown",
-              "position": "WR",
-              "nfl_team": "NE"
             },
             {
               "name": "Tucker Kraft",
@@ -1233,9 +1228,9 @@
               "nfl_team": "BUF"
             },
             {
-              "name": "Rhamondre Stevenson",
+              "name": "Travis Etienne Jr.",
               "position": "RB",
-              "nfl_team": "NE"
+              "nfl_team": "NO"
             },
             {
               "name": "George Kittle",
@@ -1256,6 +1251,11 @@
               "name": "Jared Goff",
               "position": "QB",
               "nfl_team": "DET"
+            },
+            {
+              "name": "A.J. Brown",
+              "position": "WR",
+              "nfl_team": "NE"
             },
             {
               "name": "Cam Little",
@@ -1675,7 +1675,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-15T18:04:23Z"
+      "fetched_at": "2026-09-15T20:02:48Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2432,7 +2432,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-15T18:04:23Z"
+      "fetched_at": "2026-09-15T20:02:48Z"
     }
   ]
 }
