@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T13:49:45Z",
+  "updated_at": "2026-09-16T15:48:09Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -873,7 +873,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T13:49:45Z"
+      "fetched_at": "2026-09-16T15:48:09Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1685,7 +1685,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T13:49:45Z"
+      "fetched_at": "2026-09-16T15:48:09Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2310,19 +2310,19 @@
               "nfl_team": "NYG"
             },
             {
-              "name": "Marvin Harrison Jr.",
-              "position": "WR",
-              "nfl_team": "ARI"
-            },
-            {
               "name": "Chris Godwin Jr.",
               "position": "WR",
               "nfl_team": "TB"
             },
             {
-              "name": "Travis Kelce",
+              "name": "Malik Nabers",
+              "position": "WR",
+              "nfl_team": "NYG"
+            },
+            {
+              "name": "Dalton Kincaid",
               "position": "TE",
-              "nfl_team": "KC"
+              "nfl_team": "BUF"
             },
             {
               "name": "Mike Evans",
@@ -2330,9 +2330,14 @@
               "nfl_team": "SF"
             },
             {
-              "name": "Malik Nabers",
+              "name": "Marvin Harrison Jr.",
               "position": "WR",
-              "nfl_team": "NYG"
+              "nfl_team": "ARI"
+            },
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "nfl_team": "KC"
             },
             {
               "name": "Caleb Williams",
@@ -2348,11 +2353,6 @@
               "name": "Matthew Golden",
               "position": "WR",
               "nfl_team": "GB"
-            },
-            {
-              "name": "Dalton Kincaid",
-              "position": "TE",
-              "nfl_team": "BUF"
             },
             {
               "name": "Xavier Worthy",
@@ -2420,11 +2420,6 @@
               "nfl_team": "PIT"
             },
             {
-              "name": "De'Zhaun Stribling",
-              "position": "WR",
-              "nfl_team": "SF"
-            },
-            {
               "name": "Isaiah Likely",
               "position": "TE",
               "nfl_team": "NYG"
@@ -2435,14 +2430,19 @@
               "nfl_team": "GB"
             },
             {
-              "name": "Tre Tucker",
+              "name": "Rhamondre Stevenson",
+              "position": "RB",
+              "nfl_team": "NE"
+            },
+            {
+              "name": "Tetairoa McMillan",
               "position": "WR",
-              "nfl_team": "LV"
+              "nfl_team": "CAR"
             }
           ]
         }
       ],
-      "fetched_at": "2026-09-16T13:49:45Z"
+      "fetched_at": "2026-09-16T15:48:09Z"
     }
   ]
 }
