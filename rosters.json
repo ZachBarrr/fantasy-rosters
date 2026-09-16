@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T09:52:39Z",
+  "updated_at": "2026-09-16T11:51:09Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -501,11 +501,6 @@
               "nfl_team": "NO"
             },
             {
-              "name": "Vikings D/ST",
-              "position": "D/ST",
-              "nfl_team": "MIN"
-            },
-            {
               "name": "Dalton Kincaid",
               "position": "TE",
               "nfl_team": "BUF"
@@ -519,6 +514,11 @@
               "name": "Jordan Love",
               "position": "QB",
               "nfl_team": "GB"
+            },
+            {
+              "name": "49ers D/ST",
+              "position": "D/ST",
+              "nfl_team": "SF"
             }
           ]
         },
@@ -873,7 +873,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T09:52:39Z"
+      "fetched_at": "2026-09-16T11:51:09Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1685,7 +1685,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T09:52:39Z"
+      "fetched_at": "2026-09-16T11:51:09Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2442,7 +2442,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T09:52:39Z"
+      "fetched_at": "2026-09-16T11:51:09Z"
     }
   ]
 }
