@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T07:54:08Z",
+  "updated_at": "2026-09-16T09:52:39Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -873,7 +873,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T07:54:08Z"
+      "fetched_at": "2026-09-16T09:52:39Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1028,14 +1028,14 @@
               "nfl_team": "MIN"
             },
             {
-              "name": "Ka'imi Fairbairn",
+              "name": "Eddy Pineiro",
               "position": "K",
-              "nfl_team": "HOU"
+              "nfl_team": "SF"
             },
             {
-              "name": "Jaguars",
+              "name": "Buccaneers",
               "position": "DEF",
-              "nfl_team": "JAX"
+              "nfl_team": "TB"
             }
           ]
         },
@@ -1256,6 +1256,11 @@
               "name": "Jared Goff",
               "position": "QB",
               "nfl_team": "DET"
+            },
+            {
+              "name": "Khalil Shakir",
+              "position": "WR",
+              "nfl_team": "BUF"
             },
             {
               "name": "A.J. Brown",
@@ -1648,11 +1653,6 @@
               "nfl_team": "IND"
             },
             {
-              "name": "Quentin Johnston",
-              "position": "WR",
-              "nfl_team": "LAC"
-            },
-            {
               "name": "Michael Pittman Jr.",
               "position": "WR",
               "nfl_team": "PIT"
@@ -1668,6 +1668,11 @@
               "nfl_team": "KC"
             },
             {
+              "name": "Deebo Samuel Sr.",
+              "position": "WR",
+              "nfl_team": "SF"
+            },
+            {
               "name": "Tyler Loop",
               "position": "K",
               "nfl_team": "BAL"
@@ -1680,7 +1685,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T07:54:08Z"
+      "fetched_at": "2026-09-16T09:52:39Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -1730,11 +1735,6 @@
               "nfl_team": "GB"
             },
             {
-              "name": "Alec Pierce",
-              "position": "WR",
-              "nfl_team": "IND"
-            },
-            {
               "name": "Michael Wilson",
               "position": "WR",
               "nfl_team": "ARI"
@@ -1758,6 +1758,11 @@
               "name": "Rashid Shaheed",
               "position": "WR",
               "nfl_team": "SEA"
+            },
+            {
+              "name": "Amon-Ra St. Brown",
+              "position": "WR",
+              "nfl_team": "DET"
             }
           ]
         },
@@ -1805,19 +1810,9 @@
               "nfl_team": "DET"
             },
             {
-              "name": "Jayden Reed",
-              "position": "WR",
-              "nfl_team": "GB"
-            },
-            {
               "name": "J.K. Dobbins",
               "position": "RB",
               "nfl_team": "DEN"
-            },
-            {
-              "name": "Kenny Gainwell",
-              "position": "RB",
-              "nfl_team": "TB"
             },
             {
               "name": "Bo Nix",
@@ -1830,9 +1825,19 @@
               "nfl_team": "NE"
             },
             {
-              "name": "Jakobi Meyers",
+              "name": "Kyren Williams",
+              "position": "RB",
+              "nfl_team": "LAR"
+            },
+            {
+              "name": "Jalen Coker",
               "position": "WR",
-              "nfl_team": "JAX"
+              "nfl_team": "CAR"
+            },
+            {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "nfl_team": "MIN"
             }
           ]
         },
@@ -2025,11 +2030,6 @@
               "nfl_team": "NYJ"
             },
             {
-              "name": "Harold Fannin Jr.",
-              "position": "TE",
-              "nfl_team": "CLE"
-            },
-            {
               "name": "Terry McLaurin",
               "position": "WR",
               "nfl_team": "WAS"
@@ -2058,6 +2058,11 @@
               "name": "Khalil Shakir",
               "position": "WR",
               "nfl_team": "BUF"
+            },
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "nfl_team": "LV"
             }
           ]
         },
@@ -2365,9 +2370,9 @@
           "team_name": "Viva La Touchdown",
           "players": [
             {
-              "name": "Justin Herbert",
+              "name": "Joe Burrow",
               "position": "QB",
-              "nfl_team": "LAC"
+              "nfl_team": "CIN"
             },
             {
               "name": "Omarion Hampton",
@@ -2400,6 +2405,11 @@
               "nfl_team": "BAL"
             },
             {
+              "name": "Justin Herbert",
+              "position": "QB",
+              "nfl_team": "LAC"
+            },
+            {
               "name": "MarShawn Lloyd",
               "position": "RB",
               "nfl_team": "GB"
@@ -2413,11 +2423,6 @@
               "name": "De'Zhaun Stribling",
               "position": "WR",
               "nfl_team": "SF"
-            },
-            {
-              "name": "Jared Goff",
-              "position": "QB",
-              "nfl_team": "DET"
             },
             {
               "name": "Isaiah Likely",
@@ -2437,7 +2442,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T07:54:08Z"
+      "fetched_at": "2026-09-16T09:52:39Z"
     }
   ]
 }
