@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:45:15Z",
+  "updated_at": "2026-09-16T21:27:00Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -873,7 +873,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T19:45:15Z"
+      "fetched_at": "2026-09-16T21:27:00Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1685,7 +1685,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T19:45:15Z"
+      "fetched_at": "2026-09-16T21:27:00Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2175,14 +2175,19 @@
               "nfl_team": "CIN"
             },
             {
-              "name": "Sam LaPorta",
+              "name": "George Kittle",
               "position": "TE",
-              "nfl_team": "DET"
+              "nfl_team": "SF"
             },
             {
               "name": "Bucky Irving",
               "position": "RB",
               "nfl_team": "TB"
+            },
+            {
+              "name": "Sam LaPorta",
+              "position": "TE",
+              "nfl_team": "DET"
             },
             {
               "name": "Rome Odunze",
@@ -2193,11 +2198,6 @@
               "name": "Jonathon Brooks",
               "position": "RB",
               "nfl_team": "CAR"
-            },
-            {
-              "name": "George Kittle",
-              "position": "TE",
-              "nfl_team": "SF"
             },
             {
               "name": "Jordan Addison",
@@ -2447,7 +2447,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T19:45:15Z"
+      "fetched_at": "2026-09-16T21:27:00Z"
     }
   ]
 }
