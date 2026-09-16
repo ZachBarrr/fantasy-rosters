@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T11:51:09Z",
+  "updated_at": "2026-09-16T13:35:27Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -873,7 +873,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T11:51:09Z"
+      "fetched_at": "2026-09-16T13:35:27Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -893,9 +893,9 @@
               "nfl_team": "PHI"
             },
             {
-              "name": "Jeremiyah Love",
+              "name": "Chuba Hubbard",
               "position": "RB",
-              "nfl_team": "ARI"
+              "nfl_team": "CAR"
             },
             {
               "name": "CeeDee Lamb",
@@ -918,14 +918,14 @@
               "nfl_team": "CLE"
             },
             {
+              "name": "Jeremiyah Love",
+              "position": "RB",
+              "nfl_team": "ARI"
+            },
+            {
               "name": "Jameson Williams",
               "position": "WR",
               "nfl_team": "DET"
-            },
-            {
-              "name": "Chuba Hubbard",
-              "position": "RB",
-              "nfl_team": "CAR"
             },
             {
               "name": "Alec Pierce",
@@ -1685,7 +1685,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T11:51:09Z"
+      "fetched_at": "2026-09-16T13:35:27Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -1715,9 +1715,9 @@
               "nfl_team": "SEA"
             },
             {
-              "name": "Rashee Rice",
+              "name": "Christian Watson",
               "position": "WR",
-              "nfl_team": "KC"
+              "nfl_team": "GB"
             },
             {
               "name": "Trey McBride",
@@ -1725,14 +1725,19 @@
               "nfl_team": "ARI"
             },
             {
+              "name": "Amon-Ra St. Brown",
+              "position": "WR",
+              "nfl_team": "DET"
+            },
+            {
+              "name": "Rashee Rice",
+              "position": "WR",
+              "nfl_team": "KC"
+            },
+            {
               "name": "Quinshon Judkins",
               "position": "RB",
               "nfl_team": "CLE"
-            },
-            {
-              "name": "Christian Watson",
-              "position": "WR",
-              "nfl_team": "GB"
             },
             {
               "name": "Michael Wilson",
@@ -1758,11 +1763,6 @@
               "name": "Rashid Shaheed",
               "position": "WR",
               "nfl_team": "SEA"
-            },
-            {
-              "name": "Amon-Ra St. Brown",
-              "position": "WR",
-              "nfl_team": "DET"
             }
           ]
         },
@@ -1780,9 +1780,9 @@
               "nfl_team": "BUF"
             },
             {
-              "name": "Jeremiyah Love",
+              "name": "Kyren Williams",
               "position": "RB",
-              "nfl_team": "ARI"
+              "nfl_team": "LAR"
             },
             {
               "name": "Justin Jefferson",
@@ -1805,6 +1805,11 @@
               "nfl_team": "NYJ"
             },
             {
+              "name": "Jeremiyah Love",
+              "position": "RB",
+              "nfl_team": "ARI"
+            },
+            {
               "name": "Jameson Williams",
               "position": "WR",
               "nfl_team": "DET"
@@ -1823,11 +1828,6 @@
               "name": "Romeo Doubs",
               "position": "WR",
               "nfl_team": "NE"
-            },
-            {
-              "name": "Kyren Williams",
-              "position": "RB",
-              "nfl_team": "LAR"
             },
             {
               "name": "Jalen Coker",
@@ -2442,7 +2442,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T11:51:09Z"
+      "fetched_at": "2026-09-16T13:35:27Z"
     }
   ]
 }
