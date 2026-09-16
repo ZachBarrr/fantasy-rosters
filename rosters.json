@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T05:55:39Z",
+  "updated_at": "2026-09-16T07:46:47Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -251,14 +251,14 @@
               "nfl_team": "CLE"
             },
             {
-              "name": "Ravens D/ST",
-              "position": "D/ST",
-              "nfl_team": "BAL"
-            },
-            {
               "name": "Jalen Coker",
               "position": "WR",
               "nfl_team": "CAR"
+            },
+            {
+              "name": "Buccaneers D/ST",
+              "position": "D/ST",
+              "nfl_team": "TB"
             }
           ]
         },
@@ -344,6 +344,11 @@
               "name": "Tyjae Spears",
               "position": "RB",
               "nfl_team": "TEN"
+            },
+            {
+              "name": "Pat Freiermuth",
+              "position": "TE",
+              "nfl_team": "PIT"
             }
           ]
         },
@@ -496,11 +501,6 @@
               "nfl_team": "NO"
             },
             {
-              "name": "Baker Mayfield",
-              "position": "QB",
-              "nfl_team": "TB"
-            },
-            {
               "name": "Vikings D/ST",
               "position": "D/ST",
               "nfl_team": "MIN"
@@ -514,6 +514,11 @@
               "name": "Chase McLaughlin",
               "position": "K",
               "nfl_team": "TB"
+            },
+            {
+              "name": "Jordan Love",
+              "position": "QB",
+              "nfl_team": "GB"
             }
           ]
         },
@@ -601,9 +606,9 @@
               "nfl_team": "NE"
             },
             {
-              "name": "Jonah Coleman",
+              "name": "Emmett Johnson",
               "position": "RB",
-              "nfl_team": "DEN"
+              "nfl_team": "KC"
             }
           ]
         },
@@ -851,24 +856,24 @@
               "nfl_team": "ARI"
             },
             {
-              "name": "Jaguars D/ST",
-              "position": "D/ST",
-              "nfl_team": "JAX"
-            },
-            {
-              "name": "Michael Mayer",
-              "position": "TE",
-              "nfl_team": "LV"
-            },
-            {
               "name": "Jake Bates",
               "position": "K",
               "nfl_team": "DET"
+            },
+            {
+              "name": "Kaelon Black",
+              "position": "RB",
+              "nfl_team": "SF"
+            },
+            {
+              "name": "T.J. Hockenson",
+              "position": "TE",
+              "nfl_team": "MIN"
             }
           ]
         }
       ],
-      "fetched_at": "2026-09-16T05:55:39Z"
+      "fetched_at": "2026-09-16T07:46:47Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1675,7 +1680,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T05:55:39Z"
+      "fetched_at": "2026-09-16T07:46:47Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2432,7 +2437,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T05:55:39Z"
+      "fetched_at": "2026-09-16T07:46:47Z"
     }
   ]
 }
