@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T03:57:13Z",
+  "updated_at": "2026-09-16T05:55:39Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -868,7 +868,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T03:57:13Z"
+      "fetched_at": "2026-09-16T05:55:39Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1388,6 +1388,11 @@
               "nfl_team": "IND"
             },
             {
+              "name": "Blake Corum",
+              "position": "RB",
+              "nfl_team": "LAR"
+            },
+            {
               "name": "Jonathon Brooks",
               "position": "RB",
               "nfl_team": "CAR"
@@ -1406,11 +1411,6 @@
               "name": "Carnell Tate",
               "position": "WR",
               "nfl_team": "TEN"
-            },
-            {
-              "name": "Blake Corum",
-              "position": "RB",
-              "nfl_team": "LAR"
             },
             {
               "name": "Makai Lemon",
@@ -1675,7 +1675,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T03:57:13Z"
+      "fetched_at": "2026-09-16T05:55:39Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2432,7 +2432,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T03:57:13Z"
+      "fetched_at": "2026-09-16T05:55:39Z"
     }
   ]
 }
