@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T18:14:59Z",
+  "updated_at": "2026-09-16T19:45:15Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -873,7 +873,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T18:14:59Z"
+      "fetched_at": "2026-09-16T19:45:15Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1528,9 +1528,9 @@
           "team_name": "DaddyDart",
           "players": [
             {
-              "name": "Joe Burrow",
+              "name": "Jaxson Dart",
               "position": "QB",
-              "nfl_team": "CIN"
+              "nfl_team": "NYG"
             },
             {
               "name": "Bijan Robinson",
@@ -1563,19 +1563,14 @@
               "nfl_team": "LAR"
             },
             {
-              "name": "Jaxson Dart",
+              "name": "Joe Burrow",
               "position": "QB",
-              "nfl_team": "NYG"
+              "nfl_team": "CIN"
             },
             {
               "name": "Courtland Sutton",
               "position": "WR",
               "nfl_team": "DEN"
-            },
-            {
-              "name": "Jordan Mason",
-              "position": "RB",
-              "nfl_team": "MIN"
             },
             {
               "name": "RJ Harvey",
@@ -1591,6 +1586,11 @@
               "name": "Chris Rodriguez Jr.",
               "position": "RB",
               "nfl_team": "JAX"
+            },
+            {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "nfl_team": "MIN"
             },
             {
               "name": "Brandon Aubrey",
@@ -1685,7 +1685,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T18:14:59Z"
+      "fetched_at": "2026-09-16T19:45:15Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -1833,6 +1833,11 @@
               "name": "Jalen Coker",
               "position": "WR",
               "nfl_team": "CAR"
+            },
+            {
+              "name": "Davante Adams",
+              "position": "WR",
+              "nfl_team": "LAR"
             },
             {
               "name": "Jordan Mason",
@@ -2442,7 +2447,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-16T18:14:59Z"
+      "fetched_at": "2026-09-16T19:45:15Z"
     }
   ]
 }
