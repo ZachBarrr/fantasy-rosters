@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T00:40:03Z",
+  "updated_at": "2026-09-17T01:40:43Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -873,7 +873,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T00:40:03Z"
+      "fetched_at": "2026-09-17T01:40:43Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1685,7 +1685,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T00:40:03Z"
+      "fetched_at": "2026-09-17T01:40:43Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2315,14 +2315,14 @@
               "nfl_team": "NYG"
             },
             {
-              "name": "Chris Godwin Jr.",
-              "position": "WR",
-              "nfl_team": "TB"
-            },
-            {
               "name": "Malik Nabers",
               "position": "WR",
               "nfl_team": "NYG"
+            },
+            {
+              "name": "Matthew Golden",
+              "position": "WR",
+              "nfl_team": "GB"
             },
             {
               "name": "Dalton Kincaid",
@@ -2333,6 +2333,11 @@
               "name": "Mike Evans",
               "position": "WR",
               "nfl_team": "SF"
+            },
+            {
+              "name": "Chris Godwin Jr.",
+              "position": "WR",
+              "nfl_team": "TB"
             },
             {
               "name": "Marvin Harrison Jr.",
@@ -2353,11 +2358,6 @@
               "name": "Jaxson Dart",
               "position": "QB",
               "nfl_team": "NYG"
-            },
-            {
-              "name": "Matthew Golden",
-              "position": "WR",
-              "nfl_team": "GB"
             },
             {
               "name": "Xavier Worthy",
@@ -2447,7 +2447,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T00:40:03Z"
+      "fetched_at": "2026-09-17T01:40:43Z"
     }
   ]
 }
