@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T15:30:06Z",
+  "updated_at": "2026-09-17T17:28:31Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T15:30:06Z"
+      "fetched_at": "2026-09-17T17:28:31Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1428,11 +1428,6 @@
               "nfl_team": "ARI"
             },
             {
-              "name": "Carnell Tate",
-              "position": "WR",
-              "nfl_team": "TEN"
-            },
-            {
               "name": "Makai Lemon",
               "position": "WR",
               "nfl_team": "PHI"
@@ -1441,6 +1436,11 @@
               "name": "Matthew Golden",
               "position": "WR",
               "nfl_team": "GB"
+            },
+            {
+              "name": "Caleb Douglas",
+              "position": "WR",
+              "nfl_team": "MIA"
             },
             {
               "name": "Tyler Bass",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T15:30:06Z"
+      "fetched_at": "2026-09-17T17:28:31Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2457,7 +2457,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T15:30:06Z"
+      "fetched_at": "2026-09-17T17:28:31Z"
     }
   ]
 }
