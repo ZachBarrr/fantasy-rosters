@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T13:36:26Z",
+  "updated_at": "2026-09-17T15:30:06Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -66,11 +66,6 @@
               "nfl_team": "BAL"
             },
             {
-              "name": "Matthew Stafford",
-              "position": "QB",
-              "nfl_team": "LAR"
-            },
-            {
               "name": "Romeo Doubs",
               "position": "WR",
               "nfl_team": "NE"
@@ -89,6 +84,16 @@
               "name": "Cam Little",
               "position": "K",
               "nfl_team": "JAX"
+            },
+            {
+              "name": "Chiefs D/ST",
+              "position": "D/ST",
+              "nfl_team": "KC"
+            },
+            {
+              "name": "Caleb Douglas",
+              "position": "WR",
+              "nfl_team": "MIA"
             }
           ]
         },
@@ -878,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T13:36:26Z"
+      "fetched_at": "2026-09-17T15:30:06Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1690,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T13:36:26Z"
+      "fetched_at": "2026-09-17T15:30:06Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2452,7 +2457,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T13:36:26Z"
+      "fetched_at": "2026-09-17T15:30:06Z"
     }
   ]
 }
