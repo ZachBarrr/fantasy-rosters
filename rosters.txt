@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-17T05:37:39Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-17T07:36:06Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 456
 status: ok
 
@@ -13,7 +13,7 @@ Bob's Best Team: Jonathan Taylor RB-IND; Derrick Henry RB-BAL; Chris Olave WR-NO
 Jackdonahue: Jaxon Smith-Njigba WR-SEA; Saquon Barkley RB-PHI; Javonte Williams RB-DAL; Zay Flowers WR-BAL; Davante Adams WR-LAR; Rome Odunze WR-CHI; TreVeyon Henderson RB-NE; Harold Fannin Jr. TE-CLE; Justin Herbert QB-LAC; Kyle Monangai RB-CHI; Quentin Johnston WR-LAC; Jason Myers K-SEA; Xavier Worthy WR-KC; Zach Charbonnet RB-SEA; Makai Lemon WR-PHI; Patriots D/ST D/ST-NE; Emmett Johnson RB-KC
 ZachB: CeeDee Lamb WR-DAL; James Cook III RB-BUF; Trey McBride TE-ARI; Garrett Wilson WR-NYJ; Bucky Irving RB-TB; Terry McLaurin WR-WSH; Dak Prescott QB-DAL; Jaylen Warren RB-PIT; Jonathon Brooks RB-CAR; Courtland Sutton WR-DEN; RJ Harvey RB-DEN; Matthew Golden WR-GB; Jordan Addison WR-MIN; Texans D/ST D/ST-HOU; Harrison Mevis K-LAR; Khalil Shakir WR-BUF
 PukaChuuu: Puka Nacua WR-LAR; Chase Brown RB-CIN; Nico Collins WR-HOU; Josh Allen QB-BUF; Bhayshul Tuten RB-JAX; Jadarian Price RB-SEA; Carnell Tate WR-TEN; Christian Watson WR-GB; Alec Pierce WR-IND; Rachaad White RB-WSH; Isaiah Likely TE-NYG; Brandon Aubrey K-DAL; Kyler Murray QB-MIN; Broncos D/ST D/ST-DEN; Mike Washington Jr. RB-LV; Packers D/ST D/ST-GB
-Super Bo or Bust: Christian McCaffrey RB-SF; Brock Bowers TE-LV; Rashee Rice WR-KC; Breece Hall RB-NYJ; Jaylen Waddle WR-DEN; Luther Burden III WR-CHI; Rhamondre Stevenson RB-NE; MarShawn Lloyd RB-GB; Michael Wilson WR-ARI; Blake Corum RB-LAR; Josh Jacobs RB-GB; Bo Nix QB-DEN; De'Zhaun Stribling WR-SF; Tyler Allgeier RB-ARI; Kaelon Black RB-SF; T.J. Hockenson TE-MIN; Eddy Pineiro K-SF
+Super Bo or Bust: Christian McCaffrey RB-SF; Brock Bowers TE-LV; Rashee Rice WR-KC; Breece Hall RB-NYJ; Jaylen Waddle WR-DEN; Luther Burden III WR-CHI; Rhamondre Stevenson RB-NE; MarShawn Lloyd RB-GB; Michael Wilson WR-ARI; Blake Corum RB-LAR; Josh Jacobs RB-GB; Bo Nix QB-DEN; Tyler Allgeier RB-ARI; Kaelon Black RB-SF; T.J. Hockenson TE-MIN; Eddy Pineiro K-SF; Ravens D/ST D/ST-BAL
 
 ## Barringtons and Russes (yahoo-web)
 Zach: Jayden Daniels QB-WAS; Saquon Barkley RB-PHI; Chuba Hubbard RB-CAR; CeeDee Lamb WR-DAL; Zay Flowers WR-BAL; Harold Fannin Jr. TE-CLE; Quinshon Judkins RB-CLE; Jeremiyah Love RB-ARI; Jameson Williams WR-DET; Alec Pierce WR-IND; Kenny Gainwell RB-TB; Kyler Murray QB-MIN; Xavier Worthy WR-KC; Harrison Mevis K-LAR; Rams DEF-LAR

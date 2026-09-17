@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T05:37:39Z",
+  "updated_at": "2026-09-17T07:36:06Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -851,11 +851,6 @@
               "nfl_team": "DEN"
             },
             {
-              "name": "De'Zhaun Stribling",
-              "position": "WR",
-              "nfl_team": "SF"
-            },
-            {
               "name": "Tyler Allgeier",
               "position": "RB",
               "nfl_team": "ARI"
@@ -874,11 +869,16 @@
               "name": "Eddy Pineiro",
               "position": "K",
               "nfl_team": "SF"
+            },
+            {
+              "name": "Ravens D/ST",
+              "position": "D/ST",
+              "nfl_team": "BAL"
             }
           ]
         }
       ],
-      "fetched_at": "2026-09-17T05:37:39Z"
+      "fetched_at": "2026-09-17T07:36:06Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1690,7 +1690,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T05:37:39Z"
+      "fetched_at": "2026-09-17T07:36:06Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2452,7 +2452,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T05:37:39Z"
+      "fetched_at": "2026-09-17T07:36:06Z"
     }
   ]
 }
