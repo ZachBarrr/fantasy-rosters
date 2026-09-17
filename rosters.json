@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T19:27:01Z",
+  "updated_at": "2026-09-17T21:25:41Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T19:27:01Z"
+      "fetched_at": "2026-09-17T21:25:41Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1078,14 +1078,19 @@
               "nfl_team": "NYJ"
             },
             {
-              "name": "Travis Kelce",
+              "name": "Dalton Kincaid",
               "position": "TE",
-              "nfl_team": "KC"
+              "nfl_team": "BUF"
             },
             {
               "name": "Breece Hall",
               "position": "RB",
               "nfl_team": "NYJ"
+            },
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "nfl_team": "KC"
             },
             {
               "name": "Parker Washington",
@@ -1101,11 +1106,6 @@
               "name": "Chris Godwin Jr.",
               "position": "WR",
               "nfl_team": "TB"
-            },
-            {
-              "name": "Dalton Kincaid",
-              "position": "TE",
-              "nfl_team": "BUF"
             },
             {
               "name": "Matthew Stafford",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T19:27:01Z"
+      "fetched_at": "2026-09-17T21:25:41Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -1950,14 +1950,14 @@
               "nfl_team": "LV"
             },
             {
-              "name": "Ladd McConkey",
-              "position": "WR",
-              "nfl_team": "LAC"
-            },
-            {
               "name": "DJ Moore",
               "position": "WR",
               "nfl_team": "BUF"
+            },
+            {
+              "name": "Stefon Diggs",
+              "position": "WR",
+              "nfl_team": "WAS"
             },
             {
               "name": "Kyle Pitts Sr.",
@@ -1970,6 +1970,11 @@
               "nfl_team": "NO"
             },
             {
+              "name": "Ladd McConkey",
+              "position": "WR",
+              "nfl_team": "LAC"
+            },
+            {
               "name": "A.J. Brown",
               "position": "WR",
               "nfl_team": "NE"
@@ -1978,11 +1983,6 @@
               "name": "Bhayshul Tuten",
               "position": "RB",
               "nfl_team": "JAX"
-            },
-            {
-              "name": "Stefon Diggs",
-              "position": "WR",
-              "nfl_team": "WAS"
             },
             {
               "name": "Makai Lemon",
@@ -2457,7 +2457,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T19:27:01Z"
+      "fetched_at": "2026-09-17T21:25:41Z"
     }
   ]
 }
