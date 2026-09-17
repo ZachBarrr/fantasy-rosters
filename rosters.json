@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T01:40:43Z",
+  "updated_at": "2026-09-17T03:39:12Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -519,6 +519,11 @@
               "name": "49ers D/ST",
               "position": "D/ST",
               "nfl_team": "SF"
+            },
+            {
+              "name": "Devaughn Vele",
+              "position": "WR",
+              "nfl_team": "NO"
             }
           ]
         },
@@ -873,7 +878,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T01:40:43Z"
+      "fetched_at": "2026-09-17T03:39:12Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1685,7 +1690,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T01:40:43Z"
+      "fetched_at": "2026-09-17T03:39:12Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2447,7 +2452,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T01:40:43Z"
+      "fetched_at": "2026-09-17T03:39:12Z"
     }
   ]
 }

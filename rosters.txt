@@ -1,6 +1,6 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-17T01:40:43Z (UTC; Phoenix = UTC-7)
-leagues: 3 | teams: 30 | players: 455
+updated_at: 2026-09-17T03:39:12Z (UTC; Phoenix = UTC-7)
+leagues: 3 | teams: 30 | players: 456
 status: ok
 
 ## McCarthy Precon (espn)
@@ -9,7 +9,7 @@ She's Got Game: Amon-Ra St. Brown WR-DET; Omarion Hampton RB-LAC; Travis Etienne
 Touchdown Factory: Ja'Marr Chase WR-CIN; Ashton Jeanty RB-LV; Jeremiyah Love RB-ARI; Ladd McConkey WR-LAC; Colston Loveland TE-CHI; Marvin Harrison Jr. WR-ARI; David Montgomery RB-HOU; Jaxson Dart QB-NYG; Michael Pittman Jr. WR-PIT; Jakobi Meyers WR-JAX; Dallas Goedert TE-PHI; Patrick Mahomes QB-KC; Cameron Dicker K-LAC; KC Concepcion WR-CLE; Jalen Coker WR-CAR; Buccaneers D/ST D/ST-TB
 The A Team: Bijan Robinson RB-ATL; A.J. Brown WR-NE; George Pickens WR-DAL; Quinshon Judkins RB-CLE; Lamar Jackson QB-BAL; Jameson Williams WR-DET; Kyle Pitts Sr. TE-ATL; DK Metcalf WR-PIT; Travis Kelce TE-KC; Aaron Jones Sr. RB-MIN; Wan'Dale Robinson WR-TEN; Brock Purdy QB-SF; Chris Rodriguez Jr. RB-JAX; Steelers D/ST D/ST-PIT; Chris Boswell K-PIT; Tyjae Spears RB-TEN; Pat Freiermuth TE-PIT
 Baby Back Gibbs: Jahmyr Gibbs RB-DET; Kenneth Walker III RB-KC; Drake London WR-ATL; DeVonta Smith WR-PHI; D'Andre Swift RB-CHI; Jalen Hurts QB-PHI; Tyler Warren TE-IND; Brian Thomas Jr. WR-JAX; Rico Dowdle RB-PIT; Tucker Kraft TE-GB; Chris Godwin Jr. WR-TB; Trevor Lawrence QB-JAX; Josh Downs WR-IND; Ka'imi Fairbairn K-HOU; Eagles D/ST D/ST-PHI; Woody Marks RB-HOU
-Bob's Best Team: Jonathan Taylor RB-IND; Derrick Henry RB-BAL; Chris Olave WR-NO; Emeka Egbuka WR-TB; Cam Skattebo RB-NYG; Joe Burrow QB-CIN; Parker Washington WR-JAX; Mike Evans WR-SF; J.K. Dobbins RB-DEN; Jacory Croskey-Merritt RB-WSH; Jordan Mason RB-MIN; Juwan Johnson TE-NO; Dalton Kincaid TE-BUF; Chase McLaughlin K-TB; Jordan Love QB-GB; 49ers D/ST D/ST-SF
+Bob's Best Team: Jonathan Taylor RB-IND; Derrick Henry RB-BAL; Chris Olave WR-NO; Emeka Egbuka WR-TB; Cam Skattebo RB-NYG; Joe Burrow QB-CIN; Parker Washington WR-JAX; Mike Evans WR-SF; J.K. Dobbins RB-DEN; Jacory Croskey-Merritt RB-WSH; Jordan Mason RB-MIN; Juwan Johnson TE-NO; Dalton Kincaid TE-BUF; Chase McLaughlin K-TB; Jordan Love QB-GB; 49ers D/ST D/ST-SF; Devaughn Vele WR-NO
 Jackdonahue: Jaxon Smith-Njigba WR-SEA; Saquon Barkley RB-PHI; Javonte Williams RB-DAL; Zay Flowers WR-BAL; Davante Adams WR-LAR; Rome Odunze WR-CHI; TreVeyon Henderson RB-NE; Harold Fannin Jr. TE-CLE; Justin Herbert QB-LAC; Kyle Monangai RB-CHI; Quentin Johnston WR-LAC; Jason Myers K-SEA; Xavier Worthy WR-KC; Zach Charbonnet RB-SEA; Makai Lemon WR-PHI; Patriots D/ST D/ST-NE; Emmett Johnson RB-KC
 ZachB: CeeDee Lamb WR-DAL; James Cook III RB-BUF; Trey McBride TE-ARI; Garrett Wilson WR-NYJ; Bucky Irving RB-TB; Terry McLaurin WR-WSH; Dak Prescott QB-DAL; Jaylen Warren RB-PIT; Jonathon Brooks RB-CAR; Courtland Sutton WR-DEN; RJ Harvey RB-DEN; Matthew Golden WR-GB; Jordan Addison WR-MIN; Texans D/ST D/ST-HOU; Harrison Mevis K-LAR; Khalil Shakir WR-BUF
 PukaChuuu: Puka Nacua WR-LAR; Chase Brown RB-CIN; Nico Collins WR-HOU; Josh Allen QB-BUF; Bhayshul Tuten RB-JAX; Jadarian Price RB-SEA; Carnell Tate WR-TEN; Christian Watson WR-GB; Alec Pierce WR-IND; Rachaad White RB-WSH; Isaiah Likely TE-NYG; Brandon Aubrey K-DAL; Kyler Murray QB-MIN; Broncos D/ST D/ST-DEN; Mike Washington Jr. RB-LV; Chargers D/ST D/ST-LAC
