@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T21:33:27Z",
+  "updated_at": "2026-09-17T23:24:02Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T21:33:27Z"
+      "fetched_at": "2026-09-17T23:24:02Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1233,14 +1233,14 @@
               "nfl_team": "CIN"
             },
             {
-              "name": "Tucker Kraft",
-              "position": "TE",
-              "nfl_team": "GB"
-            },
-            {
               "name": "DJ Moore",
               "position": "WR",
               "nfl_team": "BUF"
+            },
+            {
+              "name": "Tucker Kraft",
+              "position": "TE",
+              "nfl_team": "GB"
             },
             {
               "name": "Travis Etienne Jr.",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T21:33:27Z"
+      "fetched_at": "2026-09-17T23:24:02Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2457,7 +2457,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T21:33:27Z"
+      "fetched_at": "2026-09-17T23:24:02Z"
     }
   ]
 }

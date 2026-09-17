@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-17T21:33:27Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-17T23:24:02Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 457
 status: ok
 
@@ -20,7 +20,7 @@ Zach: Jayden Daniels QB-WAS; Saquon Barkley RB-PHI; Chuba Hubbard RB-CAR; CeeDee
 Baseball Is Better: Dak Prescott QB-DAL; Christian McCaffrey RB-SF; Derrick Henry RB-BAL; DeVonta Smith WR-PHI; Tetairoa McMillan WR-CAR; Mark Andrews TE-BAL; Jadarian Price RB-SEA; Jaylen Warren RB-PIT; Terry McLaurin WR-WAS; Jayden Reed WR-GB; KC Concepcion Jr. WR-CLE; Jordan Love QB-GB; Aaron Jones Sr. RB-MIN; Eddy Pineiro K-SF; Buccaneers DEF-TB
 Dak to December: Caleb Williams QB-CHI; James Cook III RB-BUF; Kenneth Walker RB-KC; Malik Nabers WR-NYG; Garrett Wilson WR-NYJ; Dalton Kincaid TE-BUF; Breece Hall RB-NYJ; Travis Kelce TE-KC; Parker Washington WR-JAX; Luther Burden III WR-CHI; Chris Godwin Jr. WR-TB; Matthew Stafford QB-LAR; Jalen Coker WR-CAR; Cameron Dicker K-LAC; Cowboys DEF-DAL
 Go Sports: Jalen Hurts QB-PHI; Jahmyr Gibbs RB-DET; D'Andre Swift RB-CHI; Nico Collins WR-HOU; Rashee Rice WR-KC; Jake Ferguson TE-DAL; Christian Watson WR-GB; Brock Bowers TE-LV; Tony Pollard RB-TEN; Brian Thomas Jr. WR-JAX; Jordan Addison WR-MIN; Baker Mayfield QB-TB; Kyle Monangai RB-CHI; Will Reichard K-MIN; Ravens DEF-BAL
-McCalfhurts: Justin Herbert QB-LAC; De'Von Achane RB-MIA; Rhamondre Stevenson RB-NE; Ja'Marr Chase WR-CIN; Tucker Kraft TE-GB; DJ Moore WR-BUF; Travis Etienne Jr. RB-NO; George Kittle TE-SF; Jacory Croskey-Merritt RB-WAS; De'Zhaun Stribling WR-SF; Jared Goff QB-DET; Khalil Shakir WR-BUF; A.J. Brown WR-NE; Cam Little K-JAX; Seahawks DEF-SEA; Steelers DEF-PIT
+McCalfhurts: Justin Herbert QB-LAC; De'Von Achane RB-MIA; Rhamondre Stevenson RB-NE; Ja'Marr Chase WR-CIN; DJ Moore WR-BUF; Tucker Kraft TE-GB; Travis Etienne Jr. RB-NO; George Kittle TE-SF; Jacory Croskey-Merritt RB-WAS; De'Zhaun Stribling WR-SF; Jared Goff QB-DET; Khalil Shakir WR-BUF; A.J. Brown WR-NE; Cam Little K-JAX; Seahawks DEF-SEA; Steelers DEF-PIT
 Magic Move Dan B: Lamar Jackson QB-BAL; Jonathan Taylor RB-IND; Javonte Williams RB-DAL; Jaylen Waddle WR-DEN; DK Metcalf WR-PIT; Trey McBride TE-ARI; Mike Evans WR-SF; Rico Dowdle RB-PIT; Rome Odunze WR-CHI; Michael Wilson WR-ARI; Brock Purdy QB-SF; Josh Jacobs RB-GB; Jordyn Tyson WR-NO; Jason Myers K-SEA; Texans DEF-HOU
 wet willy: Bo Nix QB-DEN; Omarion Hampton RB-LAC; Ashton Jeanty RB-LV; Puka Nacua WR-LAR; Ladd McConkey WR-LAC; Tyler Warren TE-IND; Blake Corum RB-LAR; Jonathon Brooks RB-CAR; Bhayshul Tuten RB-JAX; Marvin Harrison Jr. WR-ARI; Makai Lemon WR-PHI; Matthew Golden WR-GB; Caleb Douglas WR-MIA; Tyler Bass K-BUF; Patriots DEF-NE
 All Too Well- Coached: Drake Maye QB-NE; Chase Brown RB-CIN; Bucky Irving RB-TB; Amon-Ra St. Brown WR-DET; Chris Olave WR-NO; Sam LaPorta TE-DET; Tee Higgins WR-CIN; TreVeyon Henderson RB-NE; Trevor Lawrence QB-JAX; J.K. Dobbins RB-DEN; Stefon Diggs WR-WAS; Isaiah Likely TE-NYG; Wan'Dale Robinson WR-TEN; Cairo Santos K-CHI; Vikings DEF-MIN
