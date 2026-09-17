@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T03:39:12Z",
+  "updated_at": "2026-09-17T05:37:39Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -781,9 +781,9 @@
               "nfl_team": "LV"
             },
             {
-              "name": "Chargers D/ST",
+              "name": "Packers D/ST",
               "position": "D/ST",
-              "nfl_team": "LAC"
+              "nfl_team": "GB"
             }
           ]
         },
@@ -861,11 +861,6 @@
               "nfl_team": "ARI"
             },
             {
-              "name": "Jake Bates",
-              "position": "K",
-              "nfl_team": "DET"
-            },
-            {
               "name": "Kaelon Black",
               "position": "RB",
               "nfl_team": "SF"
@@ -874,11 +869,16 @@
               "name": "T.J. Hockenson",
               "position": "TE",
               "nfl_team": "MIN"
+            },
+            {
+              "name": "Eddy Pineiro",
+              "position": "K",
+              "nfl_team": "SF"
             }
           ]
         }
       ],
-      "fetched_at": "2026-09-17T03:39:12Z"
+      "fetched_at": "2026-09-17T05:37:39Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1690,7 +1690,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T03:39:12Z"
+      "fetched_at": "2026-09-17T05:37:39Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -1805,6 +1805,11 @@
               "nfl_team": "GB"
             },
             {
+              "name": "Romeo Doubs",
+              "position": "WR",
+              "nfl_team": "NE"
+            },
+            {
               "name": "Garrett Wilson",
               "position": "WR",
               "nfl_team": "NYJ"
@@ -1828,11 +1833,6 @@
               "name": "Bo Nix",
               "position": "QB",
               "nfl_team": "DEN"
-            },
-            {
-              "name": "Romeo Doubs",
-              "position": "WR",
-              "nfl_team": "NE"
             },
             {
               "name": "Jalen Coker",
@@ -2452,7 +2452,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-17T03:39:12Z"
+      "fetched_at": "2026-09-17T05:37:39Z"
     }
   ]
 }
