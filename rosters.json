@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T21:07:43Z",
+  "updated_at": "2026-09-18T23:06:14Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T21:07:43Z"
+      "fetched_at": "2026-09-18T23:06:14Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -913,9 +913,9 @@
               "nfl_team": "DAL"
             },
             {
-              "name": "Zay Flowers",
+              "name": "Alec Pierce",
               "position": "WR",
-              "nfl_team": "BAL"
+              "nfl_team": "IND"
             },
             {
               "name": "Harold Fannin Jr.",
@@ -928,6 +928,11 @@
               "nfl_team": "CLE"
             },
             {
+              "name": "Zay Flowers",
+              "position": "WR",
+              "nfl_team": "BAL"
+            },
+            {
               "name": "Jeremiyah Love",
               "position": "RB",
               "nfl_team": "ARI"
@@ -936,11 +941,6 @@
               "name": "Jameson Williams",
               "position": "WR",
               "nfl_team": "DET"
-            },
-            {
-              "name": "Alec Pierce",
-              "position": "WR",
-              "nfl_team": "IND"
             },
             {
               "name": "Kenny Gainwell",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T21:07:43Z"
+      "fetched_at": "2026-09-18T23:06:14Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -1810,14 +1810,14 @@
               "nfl_team": "GB"
             },
             {
-              "name": "Romeo Doubs",
-              "position": "WR",
-              "nfl_team": "NE"
-            },
-            {
               "name": "Garrett Wilson",
               "position": "WR",
               "nfl_team": "NYJ"
+            },
+            {
+              "name": "Romeo Doubs",
+              "position": "WR",
+              "nfl_team": "NE"
             },
             {
               "name": "Jeremiyah Love",
@@ -2457,7 +2457,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T21:07:43Z"
+      "fetched_at": "2026-09-18T23:06:14Z"
     }
   ]
 }

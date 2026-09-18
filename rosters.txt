@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-18T21:07:43Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-18T23:06:14Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 457
 status: ok
 
@@ -16,7 +16,7 @@ PukaChuuu: Puka Nacua WR-LAR; Chase Brown RB-CIN; Nico Collins WR-HOU; Josh Alle
 Super Bo or Bust: Christian McCaffrey RB-SF; Brock Bowers TE-LV; Rashee Rice WR-KC; Breece Hall RB-NYJ; Jaylen Waddle WR-DEN; Luther Burden III WR-CHI; Rhamondre Stevenson RB-NE; MarShawn Lloyd RB-GB; Michael Wilson WR-ARI; Blake Corum RB-LAR; Josh Jacobs RB-GB; Bo Nix QB-DEN; Tyler Allgeier RB-ARI; Kaelon Black RB-SF; T.J. Hockenson TE-MIN; Eddy Pineiro K-SF; Ravens D/ST D/ST-BAL
 
 ## Barringtons and Russes (yahoo-web)
-Zach: Jayden Daniels QB-WAS; Saquon Barkley RB-PHI; Chuba Hubbard RB-CAR; CeeDee Lamb WR-DAL; Zay Flowers WR-BAL; Harold Fannin Jr. TE-CLE; Quinshon Judkins RB-CLE; Jeremiyah Love RB-ARI; Jameson Williams WR-DET; Alec Pierce WR-IND; Kenny Gainwell RB-TB; Kyler Murray QB-MIN; Xavier Worthy WR-KC; Harrison Mevis K-LAR; Rams DEF-LAR
+Zach: Jayden Daniels QB-WAS; Saquon Barkley RB-PHI; Chuba Hubbard RB-CAR; CeeDee Lamb WR-DAL; Alec Pierce WR-IND; Harold Fannin Jr. TE-CLE; Quinshon Judkins RB-CLE; Zay Flowers WR-BAL; Jeremiyah Love RB-ARI; Jameson Williams WR-DET; Kenny Gainwell RB-TB; Kyler Murray QB-MIN; Xavier Worthy WR-KC; Harrison Mevis K-LAR; Rams DEF-LAR
 Baseball Is Better: Dak Prescott QB-DAL; Christian McCaffrey RB-SF; Derrick Henry RB-BAL; DeVonta Smith WR-PHI; Tetairoa McMillan WR-CAR; Mark Andrews TE-BAL; Jadarian Price RB-SEA; Jaylen Warren RB-PIT; Terry McLaurin WR-WAS; Jayden Reed WR-GB; KC Concepcion Jr. WR-CLE; Jordan Love QB-GB; Aaron Jones Sr. RB-MIN; Eddy Pineiro K-SF; Buccaneers DEF-TB
 Dak to December: Caleb Williams QB-CHI; James Cook III RB-BUF; Kenneth Walker III RB-KC; Malik Nabers WR-NYG; Garrett Wilson WR-NYJ; Dalton Kincaid TE-BUF; Breece Hall RB-NYJ; Travis Kelce TE-KC; Parker Washington WR-JAX; Luther Burden III WR-CHI; Chris Godwin Jr. WR-TB; Matthew Stafford QB-LAR; Jalen Coker WR-CAR; Cameron Dicker K-LAC; Cowboys DEF-DAL
 Go Sports: Jalen Hurts QB-PHI; Jahmyr Gibbs RB-DET; D'Andre Swift RB-CHI; Nico Collins WR-HOU; Rashee Rice WR-KC; Jake Ferguson TE-DAL; Christian Watson WR-GB; Brock Bowers TE-LV; Tony Pollard RB-TEN; Brian Thomas Jr. WR-JAX; Jordan Addison WR-MIN; Baker Mayfield QB-TB; Kyle Monangai RB-CHI; Will Reichard K-MIN; Ravens DEF-BAL
@@ -29,7 +29,7 @@ Bakers Bakery: Josh Allen QB-BUF; Kyren Williams RB-LAR; David Montgomery RB-HOU
 
 ## Dan B's Death League (yahoo-web)
 Deep Ball Dan B: Brock Purdy QB-SF; Chase Brown RB-CIN; De'Von Achane RB-MIA; Jaxon Smith-Njigba WR-SEA; Christian Watson WR-GB; Trey McBride TE-ARI; Amon-Ra St. Brown WR-DET; Rashee Rice WR-KC; Quinshon Judkins RB-CLE; Michael Wilson WR-ARI; Michael Pittman Jr. WR-PIT; Kyle Monangai RB-CHI; Patrick Mahomes QB-KC; Rashid Shaheed WR-SEA
-1 More Week!: Jayden Daniels QB-WAS; James Cook III RB-BUF; Kyren Williams RB-LAR; Justin Jefferson WR-MIN; DeVonta Smith WR-PHI; Tucker Kraft TE-GB; Romeo Doubs WR-NE; Garrett Wilson WR-NYJ; Jeremiyah Love RB-ARI; Jameson Williams WR-DET; J.K. Dobbins RB-DEN; Bo Nix QB-DEN; Jalen Coker WR-CAR; Davante Adams WR-LAR; Jordan Mason RB-MIN
+1 More Week!: Jayden Daniels QB-WAS; James Cook III RB-BUF; Kyren Williams RB-LAR; Justin Jefferson WR-MIN; DeVonta Smith WR-PHI; Tucker Kraft TE-GB; Garrett Wilson WR-NYJ; Romeo Doubs WR-NE; Jeremiyah Love RB-ARI; Jameson Williams WR-DET; J.K. Dobbins RB-DEN; Bo Nix QB-DEN; Jalen Coker WR-CAR; Davante Adams WR-LAR; Jordan Mason RB-MIN
 willy: Jalen Hurts QB-PHI; Derrick Henry RB-BAL; D'Andre Swift RB-CHI; Puka Nacua WR-LAR; George Pickens WR-DAL; Juwan Johnson TE-NO; Jaylen Waddle WR-DEN; Emeka Egbuka WR-TB; TreVeyon Henderson RB-NE; Carnell Tate WR-TEN; Josh Downs WR-IND; Jacory Croskey-Merritt RB-WAS; Chris Rodriguez Jr. RB-JAX; Woody Marks RB-HOU
 No Cap T A N: Trevor Lawrence QB-JAX; Bijan Robinson RB-ATL; Ashton Jeanty RB-LV; DJ Moore WR-BUF; Stefon Diggs WR-WAS; Kyle Pitts Sr. TE-ATL; Bhayshul Tuten RB-JAX; Travis Etienne Jr. RB-NO; Ladd McConkey WR-LAC; A.J. Brown WR-NE; Makai Lemon WR-PHI; Kyler Murray QB-MIN; Keaton Mitchell RB-LAC; Jake Ferguson TE-DAL
 Jimmy Still Hates Jerry: Dak Prescott QB-DAL; Christian McCaffrey RB-SF; Javonte Williams RB-DAL; CeeDee Lamb WR-DAL; Luther Burden III WR-CHI; Dallas Goedert TE-PHI; Breece Hall RB-NYJ; Terry McLaurin WR-WAS; Chuba Hubbard RB-CAR; Blake Corum RB-LAR; KC Concepcion Jr. WR-CLE; Jordan Love QB-GB; Khalil Shakir WR-BUF; Brock Bowers TE-LV
