@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T21:01:16Z",
+  "updated_at": "2026-09-18T21:07:43Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T21:01:16Z"
+      "fetched_at": "2026-09-18T21:07:43Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T21:01:16Z"
+      "fetched_at": "2026-09-18T21:07:43Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -1965,6 +1965,11 @@
               "nfl_team": "ATL"
             },
             {
+              "name": "Bhayshul Tuten",
+              "position": "RB",
+              "nfl_team": "JAX"
+            },
+            {
               "name": "Travis Etienne Jr.",
               "position": "RB",
               "nfl_team": "NO"
@@ -1978,11 +1983,6 @@
               "name": "A.J. Brown",
               "position": "WR",
               "nfl_team": "NE"
-            },
-            {
-              "name": "Bhayshul Tuten",
-              "position": "RB",
-              "nfl_team": "JAX"
             },
             {
               "name": "Makai Lemon",
@@ -2457,7 +2457,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T21:01:16Z"
+      "fetched_at": "2026-09-18T21:07:43Z"
     }
   ]
 }

@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-18T21:01:16Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-18T21:07:43Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 457
 status: ok
 
@@ -31,7 +31,7 @@ Bakers Bakery: Josh Allen QB-BUF; Kyren Williams RB-LAR; David Montgomery RB-HOU
 Deep Ball Dan B: Brock Purdy QB-SF; Chase Brown RB-CIN; De'Von Achane RB-MIA; Jaxon Smith-Njigba WR-SEA; Christian Watson WR-GB; Trey McBride TE-ARI; Amon-Ra St. Brown WR-DET; Rashee Rice WR-KC; Quinshon Judkins RB-CLE; Michael Wilson WR-ARI; Michael Pittman Jr. WR-PIT; Kyle Monangai RB-CHI; Patrick Mahomes QB-KC; Rashid Shaheed WR-SEA
 1 More Week!: Jayden Daniels QB-WAS; James Cook III RB-BUF; Kyren Williams RB-LAR; Justin Jefferson WR-MIN; DeVonta Smith WR-PHI; Tucker Kraft TE-GB; Romeo Doubs WR-NE; Garrett Wilson WR-NYJ; Jeremiyah Love RB-ARI; Jameson Williams WR-DET; J.K. Dobbins RB-DEN; Bo Nix QB-DEN; Jalen Coker WR-CAR; Davante Adams WR-LAR; Jordan Mason RB-MIN
 willy: Jalen Hurts QB-PHI; Derrick Henry RB-BAL; D'Andre Swift RB-CHI; Puka Nacua WR-LAR; George Pickens WR-DAL; Juwan Johnson TE-NO; Jaylen Waddle WR-DEN; Emeka Egbuka WR-TB; TreVeyon Henderson RB-NE; Carnell Tate WR-TEN; Josh Downs WR-IND; Jacory Croskey-Merritt RB-WAS; Chris Rodriguez Jr. RB-JAX; Woody Marks RB-HOU
-No Cap T A N: Trevor Lawrence QB-JAX; Bijan Robinson RB-ATL; Ashton Jeanty RB-LV; DJ Moore WR-BUF; Stefon Diggs WR-WAS; Kyle Pitts Sr. TE-ATL; Travis Etienne Jr. RB-NO; Ladd McConkey WR-LAC; A.J. Brown WR-NE; Bhayshul Tuten RB-JAX; Makai Lemon WR-PHI; Kyler Murray QB-MIN; Keaton Mitchell RB-LAC; Jake Ferguson TE-DAL
+No Cap T A N: Trevor Lawrence QB-JAX; Bijan Robinson RB-ATL; Ashton Jeanty RB-LV; DJ Moore WR-BUF; Stefon Diggs WR-WAS; Kyle Pitts Sr. TE-ATL; Bhayshul Tuten RB-JAX; Travis Etienne Jr. RB-NO; Ladd McConkey WR-LAC; A.J. Brown WR-NE; Makai Lemon WR-PHI; Kyler Murray QB-MIN; Keaton Mitchell RB-LAC; Jake Ferguson TE-DAL
 Jimmy Still Hates Jerry: Dak Prescott QB-DAL; Christian McCaffrey RB-SF; Javonte Williams RB-DAL; CeeDee Lamb WR-DAL; Luther Burden III WR-CHI; Dallas Goedert TE-PHI; Breece Hall RB-NYJ; Terry McLaurin WR-WAS; Chuba Hubbard RB-CAR; Blake Corum RB-LAR; KC Concepcion Jr. WR-CLE; Jordan Love QB-GB; Khalil Shakir WR-BUF; Brock Bowers TE-LV
 No-Huddle Hallie: Lamar Jackson QB-BAL; Jahmyr Gibbs RB-DET; Jadarian Price RB-SEA; Drake London WR-ATL; Parker Washington WR-JAX; Tyler Warren TE-IND; Jaylen Warren RB-PIT; Matthew Stafford QB-LAR; DK Metcalf WR-PIT; RJ Harvey RB-DEN; Courtland Sutton WR-DEN; Mark Andrews TE-BAL; Aaron Jones Sr. RB-MIN; Adonai Mitchell WR-NYJ
 Count Scott: Drake Maye QB-NE; Jonathan Taylor RB-IND; Kenneth Walker III RB-KC; Chris Olave WR-NO; Tee Higgins WR-CIN; George Kittle TE-SF; Bucky Irving RB-TB; Sam LaPorta TE-DET; Rome Odunze WR-CHI; Jonathon Brooks RB-CAR; Jordan Addison WR-MIN; Wan'Dale Robinson WR-TEN; Rachaad White RB-WAS; Malik Willis QB-MIA
