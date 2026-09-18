@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T15:12:11Z",
+  "updated_at": "2026-09-18T17:10:46Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T15:12:11Z"
+      "fetched_at": "2026-09-18T17:10:46Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T15:12:11Z"
+      "fetched_at": "2026-09-18T17:10:46Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2415,6 +2415,11 @@
               "nfl_team": "CHI"
             },
             {
+              "name": "Rhamondre Stevenson",
+              "position": "RB",
+              "nfl_team": "NE"
+            },
+            {
               "name": "Zay Flowers",
               "position": "WR",
               "nfl_team": "BAL"
@@ -2445,11 +2450,6 @@
               "nfl_team": "GB"
             },
             {
-              "name": "Rhamondre Stevenson",
-              "position": "RB",
-              "nfl_team": "NE"
-            },
-            {
               "name": "Tetairoa McMillan",
               "position": "WR",
               "nfl_team": "CAR"
@@ -2457,7 +2457,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T15:12:11Z"
+      "fetched_at": "2026-09-18T17:10:46Z"
     }
   ]
 }
