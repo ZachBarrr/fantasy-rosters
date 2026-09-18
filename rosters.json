@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T13:13:32Z",
+  "updated_at": "2026-09-18T15:12:11Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T13:13:32Z"
+      "fetched_at": "2026-09-18T15:12:11Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1298,9 +1298,9 @@
           "team_name": "Magic Move Dan B",
           "players": [
             {
-              "name": "Lamar Jackson",
+              "name": "Brock Purdy",
               "position": "QB",
-              "nfl_team": "BAL"
+              "nfl_team": "SF"
             },
             {
               "name": "Jonathan Taylor",
@@ -1333,6 +1333,11 @@
               "nfl_team": "SF"
             },
             {
+              "name": "Lamar Jackson",
+              "position": "QB",
+              "nfl_team": "BAL"
+            },
+            {
               "name": "Rico Dowdle",
               "position": "RB",
               "nfl_team": "PIT"
@@ -1346,11 +1351,6 @@
               "name": "Michael Wilson",
               "position": "WR",
               "nfl_team": "ARI"
-            },
-            {
-              "name": "Brock Purdy",
-              "position": "QB",
-              "nfl_team": "SF"
             },
             {
               "name": "Josh Jacobs",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T13:13:32Z"
+      "fetched_at": "2026-09-18T15:12:11Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2457,7 +2457,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T13:13:32Z"
+      "fetched_at": "2026-09-18T15:12:11Z"
     }
   ]
 }
