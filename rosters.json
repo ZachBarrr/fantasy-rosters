@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T19:09:05Z",
+  "updated_at": "2026-09-18T21:01:16Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T19:09:05Z"
+      "fetched_at": "2026-09-18T21:01:16Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-18T19:09:05Z"
+      "fetched_at": "2026-09-18T21:01:16Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2405,9 +2405,9 @@
               "nfl_team": "CIN"
             },
             {
-              "name": "Nico Collins",
+              "name": "Tetairoa McMillan",
               "position": "WR",
-              "nfl_team": "HOU"
+              "nfl_team": "CAR"
             },
             {
               "name": "Colston Loveland",
@@ -2418,6 +2418,11 @@
               "name": "Rhamondre Stevenson",
               "position": "RB",
               "nfl_team": "NE"
+            },
+            {
+              "name": "Nico Collins",
+              "position": "WR",
+              "nfl_team": "HOU"
             },
             {
               "name": "Zay Flowers",
@@ -2448,16 +2453,11 @@
               "name": "Josh Jacobs",
               "position": "RB",
               "nfl_team": "GB"
-            },
-            {
-              "name": "Tetairoa McMillan",
-              "position": "WR",
-              "nfl_team": "CAR"
             }
           ]
         }
       ],
-      "fetched_at": "2026-09-18T19:09:05Z"
+      "fetched_at": "2026-09-18T21:01:16Z"
     }
   ]
 }

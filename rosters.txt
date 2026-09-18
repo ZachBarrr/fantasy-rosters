@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-18T19:09:05Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-18T21:01:16Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 457
 status: ok
 
@@ -37,6 +37,6 @@ No-Huddle Hallie: Lamar Jackson QB-BAL; Jahmyr Gibbs RB-DET; Jadarian Price RB-S
 Count Scott: Drake Maye QB-NE; Jonathan Taylor RB-IND; Kenneth Walker III RB-KC; Chris Olave WR-NO; Tee Higgins WR-CIN; George Kittle TE-SF; Bucky Irving RB-TB; Sam LaPorta TE-DET; Rome Odunze WR-CHI; Jonathon Brooks RB-CAR; Jordan Addison WR-MIN; Wan'Dale Robinson WR-TEN; Rachaad White RB-WAS; Malik Willis QB-MIA
 Bakers Bakery: Joe Burrow QB-CIN; Kyren Williams RB-LAR; Rhamondre Stevenson RB-NE; Amon-Ra St. Brown WR-DET; Tetairoa McMillan WR-CAR; Dalton Schultz TE-HOU; Davante Adams WR-LAR; Brock Bowers TE-LV; Brian Thomas Jr. WR-JAX; Tony Pollard RB-TEN; Quentin Johnston WR-LAC; Jordan Mason RB-MIN; Baker Mayfield QB-TB; Jordyn Tyson WR-NO
 #gocardinals: Josh Allen QB-BUF; Saquon Barkley RB-PHI; Cam Skattebo RB-NYG; Malik Nabers WR-NYG; Matthew Golden WR-GB; Dalton Kincaid TE-BUF; Mike Evans WR-SF; Chris Godwin Jr. WR-TB; Marvin Harrison Jr. WR-ARI; Travis Kelce TE-KC; Caleb Williams QB-CHI; Jaxson Dart QB-NYG; Xavier Worthy WR-KC; Alvin Kamara RB-NO
-Viva La Touchdown: Joe Burrow QB-CIN; Omarion Hampton RB-LAC; David Montgomery RB-HOU; Ja'Marr Chase WR-CIN; Nico Collins WR-HOU; Colston Loveland TE-CHI; Rhamondre Stevenson RB-NE; Zay Flowers WR-BAL; Justin Herbert QB-LAC; MarShawn Lloyd RB-GB; Rico Dowdle RB-PIT; Isaiah Likely TE-NYG; Josh Jacobs RB-GB; Tetairoa McMillan WR-CAR
+Viva La Touchdown: Joe Burrow QB-CIN; Omarion Hampton RB-LAC; David Montgomery RB-HOU; Ja'Marr Chase WR-CIN; Tetairoa McMillan WR-CAR; Colston Loveland TE-CHI; Rhamondre Stevenson RB-NE; Nico Collins WR-HOU; Zay Flowers WR-BAL; Justin Herbert QB-LAC; MarShawn Lloyd RB-GB; Rico Dowdle RB-PIT; Isaiah Likely TE-NYG; Josh Jacobs RB-GB
 
 END
