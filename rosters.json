@@ -1,7 +1,16 @@
 {
-  "updated_at": "2026-09-19T19:16:52Z",
-  "status": "ok",
-  "errors": [],
+  "updated_at": "2026-09-19T20:50:44Z",
+  "status": "problem",
+  "errors": [
+    {
+      "league": "Barringtons and Russes",
+      "message": "Yahoo redirected https://football.fantasysports.yahoo.com/f1/202014/teams to a login page. The league is private and the YAHOO_Y / YAHOO_T cookies are missing or EXPIRED. Fix: copy fresh Y and T cookies from Chrome and update the secrets."
+    },
+    {
+      "league": "Dan B's Death League",
+      "message": "Yahoo redirected https://football.fantasysports.yahoo.com/f1/1585076/teams to a login page. The league is private and the YAHOO_Y / YAHOO_T cookies are missing or EXPIRED. Fix: copy fresh Y and T cookies from Chrome and update the secrets."
+    }
+  ],
   "leagues": [
     {
       "league_name": "McCarthy Precon",
@@ -883,7 +892,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T19:16:52Z"
+      "fetched_at": "2026-09-19T20:50:44Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1695,7 +1704,8 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T19:16:52Z"
+      "fetched_at": "2026-09-19T19:16:52Z",
+      "stale_since": "2026-09-19T19:16:52Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2462,7 +2472,8 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T19:16:52Z"
+      "fetched_at": "2026-09-19T19:16:52Z",
+      "stale_since": "2026-09-19T19:16:52Z"
     }
   ]
 }
