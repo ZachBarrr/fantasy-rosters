@@ -1,11 +1,11 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-19T00:25:45Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-19T07:25:10Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 457
 status: ok
 
 ## McCarthy Precon (espn)
 Love thy Nabers: Justin Jefferson WR-MIN; De'Von Achane RB-MIA; Kyren Williams RB-LAR; Malik Nabers WR-NYG; DJ Moore WR-BUF; Drake Maye QB-NE; Kenny Gainwell RB-TB; Sam LaPorta TE-DET; Caleb Williams QB-CHI; Stefon Diggs WR-WSH; Mark Andrews TE-BAL; Romeo Doubs WR-NE; Rams D/ST D/ST-LAR; Isiah Pacheco RB-DET; Cam Little K-JAX; Chiefs D/ST D/ST-KC; Caleb Douglas WR-MIA
-She's Got Game: Amon-Ra St. Brown WR-DET; Omarion Hampton RB-LAC; Travis Etienne Jr. RB-NO; Tetairoa McMillan WR-CAR; Tee Higgins WR-CIN; Jayden Daniels QB-WSH; George Kittle TE-SF; Tony Pollard RB-TEN; Chuba Hubbard RB-CAR; Jayden Reed WR-GB; Jake Ferguson TE-DAL; Tyler Shough QB-NO; Seahawks D/ST D/ST-SEA; Deebo Samuel Sr. WR-SF; Harrison Butker K-KC; Denzel Boston WR-CLE
+She's Got Game: Amon-Ra St. Brown WR-DET; Omarion Hampton RB-LAC; Travis Etienne Jr. RB-NO; Tetairoa McMillan WR-CAR; Tee Higgins WR-CIN; Jayden Daniels QB-WSH; George Kittle TE-SF; Tony Pollard RB-TEN; Chuba Hubbard RB-CAR; Jayden Reed WR-GB; Jake Ferguson TE-DAL; Seahawks D/ST D/ST-SEA; Deebo Samuel Sr. WR-SF; Harrison Butker K-KC; Denzel Boston WR-CLE; Matthew Stafford QB-LAR
 Touchdown Factory: Ja'Marr Chase WR-CIN; Ashton Jeanty RB-LV; Jeremiyah Love RB-ARI; Ladd McConkey WR-LAC; Colston Loveland TE-CHI; Marvin Harrison Jr. WR-ARI; David Montgomery RB-HOU; Jaxson Dart QB-NYG; Michael Pittman Jr. WR-PIT; Jakobi Meyers WR-JAX; Dallas Goedert TE-PHI; Patrick Mahomes QB-KC; Cameron Dicker K-LAC; KC Concepcion WR-CLE; Jalen Coker WR-CAR; Buccaneers D/ST D/ST-TB
 The A Team: Bijan Robinson RB-ATL; A.J. Brown WR-NE; George Pickens WR-DAL; Quinshon Judkins RB-CLE; Lamar Jackson QB-BAL; Jameson Williams WR-DET; Kyle Pitts Sr. TE-ATL; DK Metcalf WR-PIT; Travis Kelce TE-KC; Aaron Jones Sr. RB-MIN; Wan'Dale Robinson WR-TEN; Brock Purdy QB-SF; Chris Rodriguez Jr. RB-JAX; Steelers D/ST D/ST-PIT; Chris Boswell K-PIT; Tyjae Spears RB-TEN; Pat Freiermuth TE-PIT
 Baby Back Gibbs: Jahmyr Gibbs RB-DET; Kenneth Walker III RB-KC; Drake London WR-ATL; DeVonta Smith WR-PHI; D'Andre Swift RB-CHI; Jalen Hurts QB-PHI; Tyler Warren TE-IND; Brian Thomas Jr. WR-JAX; Rico Dowdle RB-PIT; Tucker Kraft TE-GB; Chris Godwin Jr. WR-TB; Trevor Lawrence QB-JAX; Josh Downs WR-IND; Ka'imi Fairbairn K-HOU; Eagles D/ST D/ST-PHI; Woody Marks RB-HOU

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T00:25:45Z",
+  "updated_at": "2026-09-19T07:25:10Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -156,11 +156,6 @@
               "nfl_team": "DAL"
             },
             {
-              "name": "Tyler Shough",
-              "position": "QB",
-              "nfl_team": "NO"
-            },
-            {
               "name": "Seahawks D/ST",
               "position": "D/ST",
               "nfl_team": "SEA"
@@ -179,6 +174,11 @@
               "name": "Denzel Boston",
               "position": "WR",
               "nfl_team": "CLE"
+            },
+            {
+              "name": "Matthew Stafford",
+              "position": "QB",
+              "nfl_team": "LAR"
             }
           ]
         },
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T00:25:45Z"
+      "fetched_at": "2026-09-19T07:25:10Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T00:25:45Z"
+      "fetched_at": "2026-09-19T07:25:10Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2457,7 +2457,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T00:25:45Z"
+      "fetched_at": "2026-09-19T07:25:10Z"
     }
   ]
 }
