@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T15:20:06Z",
+  "updated_at": "2026-09-19T17:18:31Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T15:20:06Z"
+      "fetched_at": "2026-09-19T17:18:31Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T15:20:06Z"
+      "fetched_at": "2026-09-19T17:18:31Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -2462,7 +2462,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T15:20:06Z"
+      "fetched_at": "2026-09-19T17:18:31Z"
     }
   ]
 }
