@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T13:21:25Z",
+  "updated_at": "2026-09-19T15:20:06Z",
   "status": "ok",
   "errors": [],
   "leagues": [
@@ -883,7 +883,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T13:21:25Z"
+      "fetched_at": "2026-09-19T15:20:06Z"
     },
     {
       "league_name": "Barringtons and Russes",
@@ -1695,7 +1695,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T13:21:25Z"
+      "fetched_at": "2026-09-19T15:20:06Z"
     },
     {
       "league_name": "Dan B's Death League",
@@ -1935,9 +1935,9 @@
           "team_name": "No Cap T A N",
           "players": [
             {
-              "name": "Trevor Lawrence",
+              "name": "Baker Mayfield",
               "position": "QB",
-              "nfl_team": "JAX"
+              "nfl_team": "TB"
             },
             {
               "name": "Bijan Robinson",
@@ -1970,6 +1970,11 @@
               "nfl_team": "JAX"
             },
             {
+              "name": "Trevor Lawrence",
+              "position": "QB",
+              "nfl_team": "JAX"
+            },
+            {
               "name": "Travis Etienne Jr.",
               "position": "RB",
               "nfl_team": "NO"
@@ -1990,11 +1995,6 @@
               "nfl_team": "PHI"
             },
             {
-              "name": "Kyler Murray",
-              "position": "QB",
-              "nfl_team": "MIN"
-            },
-            {
               "name": "Keaton Mitchell",
               "position": "RB",
               "nfl_team": "LAC"
@@ -2003,6 +2003,11 @@
               "name": "Jake Ferguson",
               "position": "TE",
               "nfl_team": "DAL"
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "nfl_team": "MIN"
             }
           ]
         },
@@ -2457,7 +2462,7 @@
           ]
         }
       ],
-      "fetched_at": "2026-09-19T13:21:25Z"
+      "fetched_at": "2026-09-19T15:20:06Z"
     }
   ]
 }
