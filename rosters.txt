@@ -1,5 +1,5 @@
 FANTASY ROSTERS SNAPSHOT
-updated_at: 2026-09-21T16:41:49Z (UTC; Phoenix = UTC-7)
+updated_at: 2026-09-21T18:40:59Z (UTC; Phoenix = UTC-7)
 leagues: 3 | teams: 30 | players: 458
 status: problem
 error: [Barringtons and Russes] Yahoo redirected https://football.fantasysports.yahoo.com/f1/202014/teams to a login page. The league is private and the YAHOO_Y / YAHOO_T cookies are missing or EXPIRED. Fix: copy fresh Y and T cookies from Chrome and update the secrets.
